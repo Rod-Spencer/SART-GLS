@@ -1,0 +1,8 @@
+using Segway.Modules.ShellControls;
+
+namespace Segway.Modules.WorkOrder
+{
+public interface Work_Order_Configuration_Control_Interface :IView
+{
+}
+}

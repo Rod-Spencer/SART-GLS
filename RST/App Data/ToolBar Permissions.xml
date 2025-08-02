@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Permissions>
+  <!-- Permission Name Format: User Level (String) | Work Order Is Open (Boolean) | Successful Start Config (Boolean) -->
+  <Permission>
+    <Name>Master|True|True</Name>
+    <ToolBar_Elements>
+      <Name>Event Logs</Name>
+      <Name>Load Code</Name>
+      <Name>Black Box</Name>  
+      <Name>Administration</Name>
+      <Name>Override</Name>
+      <Name>Users</Name>
+      <Name>Settings</Name>
+      <Name>Parts</Name>
+      <Name>Model</Name>
+      <Name>SRO</Name>
+      <Name>Administration_TBRet</Name>
+      <Name>Work Order</Name>
+      <Name>Diagnostics</Name>
+      <Name>Repairs</Name>
+      <Name>Ride Test</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BL</Name>
+      <Name>BTLRET</Name>
+    </ToolBar_Elements>
+  </Permission>
+  <Permission>
+    <Name>Administrator|True|True</Name>
+    <ToolBar_Elements>
+      <Name>Event Logs</Name>
+      <Name>Load Code</Name>
+      <Name>Black Box</Name>
+      <Name>Administration</Name>
+      <Name>Override</Name>
+      <Name>Users</Name>
+      <Name>Settings</Name>
+      <Name>Parts</Name>
+      <Name>Model</Name>
+      <Name>SRO</Name>
+      <Name>Administration_TBRet</Name>
+      <Name>Work Order</Name>
+      <Name>Diagnostics</Name>
+      <Name>Repairs</Name>
+      <Name>Ride Test</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BL</Name>
+      <Name>BTLRET</Name>
+    </ToolBar_Elements>
+  </Permission>
+  <Permission>
+    <Name>Expert|True|True</Name>
+    <ToolBar_Elements>
+      <Name>Event Logs</Name>
+      <Name>Load Code</Name>
+      <Name>Black Box</Name>
+      <Name>Administration</Name>
+      <Name>Override</Name>
+      <Name>Users</Name>
+      <Name>Settings</Name>
+      <Name>Parts</Name>
+      <Name>Model</Name>
+      <Name>SRO</Name>
+      <Name>Administration_TBRet</Name>
+      <Name>Work Order</Name>
+      <Name>Diagnostics</Name>
+      <Name>Repairs</Name>
+      <Name>Ride Test</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BL</Name>
+      <Name>BTLRET</Name>
+    </ToolBar_Elements>
+  </Permission>
+  <Permission>
+    <Name>Advanced|True|True</Name>
+    <ToolBar_Elements>
+      <Name>Event Logs</Name>
+      <Name>Load Code</Name>
+      <Name>Work Order</Name>
+      <Name>Diagnostics</Name>
+      <Name>Repairs</Name>
+      <Name>Ride Test</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BL</Name>
+      <Name>BTLRET</Name>
+    </ToolBar_Elements>
+  </Permission>
+  <Permission>
+    <Name>Intermediate|True|True</Name>
+    <ToolBar_Elements>
+      <Name>Event Logs</Name>
+      <Name>Load Code</Name>
+      <Name>Work Order</Name>
+      <Name>Diagnostics</Name>
+      <Name>Repairs</Name>
+      <Name>Ride Test</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BL</Name>
+      <Name>BTLRET</Name>
+    </ToolBar_Elements>
+  </Permission>
+  <Permission>
+    <Name>Basic|True|True</Name>
+    <ToolBar_Elements>
+      <Name>Event Logs</Name>
+      <Name>Work Order</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BL</Name>
+      <Name>BTLRET</Name>
+    </ToolBar_Elements>
+  </Permission>
+
+  <Permission>
+    <Name>Master|False|True</Name>
+    <ToolBar_Elements>
+      <Name>Event Logs</Name>
+      <Name>Black Box</Name>
+      <Name>Administration</Name>
+      <Name>Override</Name>
+      <Name>Users</Name>
+      <Name>Settings</Name>
+      <Name>Parts</Name>
+      <Name>Model</Name>
+      <Name>SRO</Name>
+      <Name>Administration_TBRet</Name>
+      <Name>Work Order</Name>
+      <Name>Diagnostics</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BL</Name>
+      <Name>BTLRET</Name>
+    </ToolBar_Elements>
+  </Permission>
+  <Permission>
+    <Name>Administrator|False|True</Name>
+    <ToolBar_Elements>
+      <Name>Event Logs</Name>
+      <Name>Administration</Name>
+      <Name>Override</Name>
+      <Name>Users</Name>
+      <Name>Settings</Name>
+      <Name>Parts</Name>
+      <Name>Model</Name>
+      <Name>SRO</Name>
+      <Name>Administration_TBRet</Name>
+      <Name>Work Order</Name>
+      <Name>Diagnostics</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BL</Name>
+      <Name>BTLRET</Name>
+    </ToolBar_Elements>
+  </Permission>
+  <Permission>
+    <Name>Expert|False|True</Name>
+    <ToolBar_Elements>
+      <Name>Event Logs</Name>
+      <Name>Administration</Name>
+      <Name>Override</Name>
+      <Name>Users</Name>
+      <Name>Settings</Name>
+      <Name>Parts</Name>
+      <Name>Model</Name>
+      <Name>SRO</Name>
+      <Name>Administration_TBRet</Name>
+      <Name>Work Order</Name>
+      <Name>Diagnostics</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BL</Name>
+      <Name>BTLRET</Name>
+    </ToolBar_Elements>
+  </Permission>
+  <Permission>
+    <Name>Advanced|False|True</Name>
+    <ToolBar_Elements>
+      <Name>Event Logs</Name>
+      <Name>Work Order</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BL</Name>
+      <Name>BTLRET</Name>
+    </ToolBar_Elements>
+  </Permission>
+  <Permission>
+    <Name>Intermediate|False|True</Name>
+    <ToolBar_Elements>
+      <Name>Event Logs</Name>
+      <Name>Work Order</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BL</Name>
+      <Name>BTLRET</Name>
+    </ToolBar_Elements>
+  </Permission>
+  <Permission>
+    <Name>Basic|False|True</Name>
+    <ToolBar_Elements>
+      <Name>Event Logs</Name>
+      <Name>Work Order</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BL</Name>
+      <Name>BTLRET</Name>
+    </ToolBar_Elements>
+  </Permission>
+
+  <Permission>
+    <Name>Master|True|False</Name>
+    <ToolBar_Elements>
+      <Name>Work Order</Name>
+      <Name>Event Logs</Name>
+      <Name>Black Box</Name>
+      <Name>Administration</Name>
+      <Name>Override</Name>
+      <Name>Users</Name>
+      <Name>Settings</Name>
+      <Name>Parts</Name>
+      <Name>Model</Name>
+      <Name>SRO</Name>
+      <Name>Administration_TBRet</Name>
+      <Name>Repairs</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BL</Name>
+      <Name>BTLRET</Name>
+    </ToolBar_Elements>
+  </Permission>
+  <Permission>
+    <Name>Administrator|True|False</Name>
+    <ToolBar_Elements>
+      <Name>Work Order</Name>
+      <Name>Event Logs</Name>
+      <Name>Black Box</Name>
+      <Name>Administration</Name>
+      <Name>Override</Name>
+      <Name>Users</Name>
+      <Name>Settings</Name>
+      <Name>Parts</Name>
+      <Name>Model</Name>
+      <Name>SRO</Name>
+      <Name>Administration_TBRet</Name>
+      <Name>Repairs</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BL</Name>
+      <Name>BTLRET</Name>
+    </ToolBar_Elements>
+  </Permission>
+  <Permission>
+    <Name>Expert|True|False</Name>
+    <ToolBar_Elements>
+      <Name>Work Order</Name>
+      <Name>Event Logs</Name>
+      <Name>Black Box</Name>
+      <Name>Administration</Name>
+      <Name>Override</Name>
+      <Name>Users</Name>
+      <Name>Settings</Name>
+      <Name>Parts</Name>
+      <Name>Model</Name>
+      <Name>SRO</Name>
+      <Name>Administration_TBRet</Name>
+      <Name>Repairs</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BL</Name>
+      <Name>BTLRET</Name>
+    </ToolBar_Elements>
+  </Permission>
+  <Permission>
+    <Name>Advanced|True|False</Name>
+    <ToolBar_Elements>
+      <Name>Work Order</Name>
+      <Name>Event Logs</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BL</Name>
+      <Name>BTLRET</Name>
+    </ToolBar_Elements>
+  </Permission>
+  <Permission>
+    <Name>Intermediate|True|False</Name>
+    <ToolBar_Elements>
+      <Name>Work Order</Name>
+      <Name>Event Logs</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BL</Name>
+      <Name>BTLRET</Name>
+    </ToolBar_Elements>
+  </Permission>
+  <Permission>
+    <Name>Basic|True|False</Name>
+    <ToolBar_Elements>
+      <Name>Work Order</Name>
+      <Name>Event Logs</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BL</Name>
+      <Name>BTLRET</Name>
+    </ToolBar_Elements>
+  </Permission>
+
+  <Permission>
+    <Name>Master|False|False</Name>
+    <ToolBar_Elements>
+      <Name>Work Order</Name>
+      <Name>Event Logs</Name>
+      <Name>Black Box</Name>
+      <Name>Administration</Name>
+      <Name>Override</Name>
+      <Name>Users</Name>
+      <Name>Settings</Name>
+      <Name>Parts</Name>
+      <Name>Model</Name>
+      <Name>SRO</Name>
+      <Name>Administration_TBRet</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BL</Name>
+      <Name>BTLRET</Name>
+    </ToolBar_Elements>
+  </Permission>
+  <Permission>
+    <Name>Administrator|False|False</Name>
+    <ToolBar_Elements>
+      <Name>Work Order</Name>
+      <Name>Event Logs</Name>
+      <Name>Administration</Name>
+      <Name>Override</Name>
+      <Name>Users</Name>
+      <Name>Settings</Name>
+      <Name>Parts</Name>
+      <Name>Model</Name>
+      <Name>SRO</Name>
+      <Name>Administration_TBRet</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BL</Name>
+      <Name>BTLRET</Name>
+    </ToolBar_Elements>
+  </Permission>
+  <Permission>
+    <Name>Expert|False|False</Name>
+    <ToolBar_Elements>
+      <Name>Work Order</Name>
+      <Name>Event Logs</Name>
+      <Name>Administration</Name>
+      <Name>Override</Name>
+      <Name>Users</Name>
+      <Name>Settings</Name>
+      <Name>Parts</Name>
+      <Name>Model</Name>
+      <Name>SRO</Name>
+      <Name>Administration_TBRet</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BL</Name>
+      <Name>BTLRET</Name>
+    </ToolBar_Elements>
+  </Permission>
+  <Permission>
+    <Name>Advanced|False|False</Name>
+    <ToolBar_Elements>
+      <Name>Work Order</Name>
+      <Name>Event Logs</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BTLRET</Name>
+      <Name>BL</Name>
+    </ToolBar_Elements>
+  </Permission>
+  <Permission>
+    <Name>Intermediate|False|False</Name>
+    <ToolBar_Elements>
+      <Name>Work Order</Name>
+      <Name>Event Logs</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BTLRET</Name>
+      <Name>BL</Name>
+    </ToolBar_Elements>
+  </Permission>
+  <Permission>
+    <Name>Basic|False|False</Name>
+    <ToolBar_Elements>
+      <Name>Work Order</Name>
+      <Name>Event Logs</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+      <Name>BTL</Name>
+      <Name>BD</Name>
+      <Name>BTLRET</Name>
+      <Name>BL</Name>
+    </ToolBar_Elements>
+  </Permission>
+</Permissions>

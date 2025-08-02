@@ -1,0 +1,16 @@
+﻿<Application
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:shared="http://schemas.actiprosoftware.com/winfx/xaml/shared"
+             x:Class="Segway.RST.App"
+             >
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/WPFResources;component/Themes/Generic.xaml"/>
+                <ResourceDictionary Source="/WPFResources;component/Themes/ListViews.xaml"/>
+                <ResourceDictionary Source="/WPFResources;component/Themes/TabControls.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Folder_Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FolderData>
+    <File_Data>
+      <Name>Images\Ride Test.png</Name>
+      <CRC>1364634897</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>packages.config</Name>
+      <CRC>177334841</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Ride Test Module.cs</Name>
+      <CRC>1726773376</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\Ride Test ViewModel Interface.cs</Name>
+      <CRC>-1676239133</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\Ride Test ViewModel.cs</Name>
+      <CRC>-1634598827</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Ride Test Control Interface.cs</Name>
+      <CRC>1355418335</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Ride Test Control.xaml</Name>
+      <CRC>-1895549068</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Ride Test Control.xaml.cs</Name>
+      <CRC>799255694</CRC>
+    </File_Data>
+  </FolderData>
+  <RefProjData>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Authentication Objects\Authentication Objects.csproj</Name>
+      <Version>1.0.5594.448</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\Authentication Objects\Authentication Objects.csproj</Name>
+      <Version>1.0.5866.528</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\Common\Common.csproj</Name>
+      <Version>1.0.2725.2152</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Common\Common.csproj</Name>
+      <Version>1.0.5588.2313</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Exception Helper\Exception Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\Exception Helper\Exception Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Header Bar\Header Bar Module.csproj</Name>
+      <Version>1.0.5625.194</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\Image Helper\Image Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Image Helper\Image Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Tool Bars\List Box Tool Bar\List Box Tool Bar.csproj</Name>
+      <Version>1.0.3185.926</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Logger Helper\Logger Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\Logger Helper\Logger Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Tool Bars\Multi-Level Tool Bar\Multi-Level Tool Bar.csproj</Name>
+      <Version>1.0.5866.269</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\NHibernateBase\NHibernateBase.csproj</Name>
+      <Version>1.0.5588.196</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\MSSQL\SART 2012 Web Service Client\SART 2012 Web Service Client.csproj</Name>
+      <Version>1.0.5580.748</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\SART Infrastructure\SART Infrastructure.csproj</Name>
+      <Version>1.0.5866.1819</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\SART Objects\SART Objects.csproj</Name>
+      <Version>1.0.5866.1840</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\SART Objects\SART Objects.csproj</Name>
+      <Version>1.0.5594.1773</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\SART Objects\SART Objects.csproj</Name>
+      <Version>1.0.2725.1277</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\REST Services\SART\SART Web Service Client REST\SART Web Service Client REST.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Segway Objects\Segway Objects.csproj</Name>
+      <Version>1.0.5593.4236</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\Segway Objects\Segway Objects.csproj</Name>
+      <Version>1.0.2725.3885</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\ShellControls\Segway ShellControls Module.csproj</Name>
+      <Version>1.0.5866.1219</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\Work Order Module\Work Order Module.csproj</Name>
+      <Version>1.0.5866.4381</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\WPFResources\WPFResources.csproj</Name>
+      <Version>1.0.5625.372</Version>
+    </Reference_Project_Data>
+  </RefProjData>
+  <Changed>true</Changed>
+</Folder_Data>

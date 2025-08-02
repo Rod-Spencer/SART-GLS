@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1B6929EA-A3FE-4286-86F6-5D017F0A6354}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Segway.Service.Bugs</RootNamespace>
+    <AssemblyName>Bug Tracking Module</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\x86\Release\Bug_Tracking_Module.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiproSoftware.Shared.Wpf, Version=14.1.601.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL" />
+    <Reference Include="ActiproSoftware.Views.Wpf, Version=14.1.601.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Prism, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Prism.UnityExtensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="NLog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\tools\3rd Party Libraries\NLog\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="PresentationFramework.Aero" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bug Tracking Module.cs" />
+    <Compile Include="Events\Bug Open Event.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <AppDesigner Include="Properties\" />
+    <Page Include="Views\Bug List Control.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="Views\Bug List Control Interface.cs" />
+    <Compile Include="Views\Bug List Control.xaml.cs">
+      <DependentUpon>Bug List Control.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View Models\Bug List ViewModel Interface.cs" />
+    <Compile Include="View Models\Bug List ViewModel.cs" />
+    <Page Include="Views\Bug Detail Control.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="Views\Bug Detail Control Interface.cs" />
+    <Compile Include="Views\Bug Detail Control.xaml.cs">
+      <DependentUpon>Bug Detail Control.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\Work Order Module\Services\Image Converter.cs">
+      <Link>Services\Image Converter.cs</Link>
+    </Compile>
+    <Compile Include="View Models\Bug Detail ViewModel Interface.cs" />
+    <Compile Include="View Models\Bug Detail ViewModel.cs" />
+    <Compile Include="Data Models\Developer Defaults.cs" />
+    <Compile Include="Events\Bug Refresh List Event.cs" />
+    <Compile Include="Services\Submitter Converter.cs" />
+    <Compile Include="Events\Bug Menu Detail Activate Event.cs" />
+    <Compile Include="Events\Application Activated Event.cs" />
+    <Compile Include="Events\Bug Application Activated Event.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Libraries\Authentication Objects\Authentication Objects.csproj">
+      <Project>{F7469A29-2A38-4960-8D4A-0E6C2AA8F508}</Project>
+      <Name>Authentication Objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\Bug Objects\Bug Objects.csproj">
+      <Project>{a7d1a951-c60e-4d3d-b7a8-f8f1781bd11f}</Project>
+      <Name>Bug Objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\Common\Common.csproj">
+      <Project>{734D7154-5577-4F4E-AEE3-464CB846CE31}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\Image Helper\Image Helper.csproj">
+      <Project>{046E6821-06A8-4D32-B7A1-1F631ECA5D21}</Project>
+      <Name>Image Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\NHibernateBase\NHibernateBase.csproj">
+      <Project>{cfa2bbf5-bf78-47a3-8722-c88fbaabd44e}</Project>
+      <Name>NHibernateBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\SART Objects\SART Objects.csproj">
+      <Project>{A0A31ECD-990F-431E-842E-10CBB9B88514}</Project>
+      <Name>SART Objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\Segway Objects\Segway Objects.csproj">
+      <Project>{19F5F1E6-00BC-47C8-974A-147E3D52633C}</Project>
+      <Name>Segway Objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\Syteline Objects\Syteline Objects.csproj">
+      <Project>{043E9741-9271-4125-A892-40C64085861D}</Project>
+      <Name>Syteline Objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Segway Modules\Controls\Add Window\Add Window Module.csproj">
+      <Project>{3B6BB273-F419-42EA-BC74-4061E3AC44B5}</Project>
+      <Name>Add Window Module</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Segway Modules\Controls\Comment Control\Comment Module.csproj">
+      <Project>{63aa2761-30cf-487a-acdb-cb0aa7a20bcd}</Project>
+      <Name>Comment Module</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Segway Modules\Controls\DateTime Picker\DateTime Picker\DateTime Picker.csproj">
+      <Project>{f1d66a05-235f-4286-bfd8-97c02429970c}</Project>
+      <Name>DateTime Picker</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Segway Modules\Login Modules\Segway Login Module\Segway Login Module.csproj">
+      <Project>{BBC369CF-C42F-47E9-B3EA-219FAD43BE07}</Project>
+      <Name>Segway Login Module</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Segway Modules\ShellControls\Segway ShellControls Module.csproj">
+      <Project>{03055A48-F4AC-457C-A8CB-72584A8D511F}</Project>
+      <Name>Segway ShellControls Module</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Segway Modules\Status Bars\Standard Status Bar\Standard Status Bar.csproj">
+      <Project>{C79FA037-53EF-48C3-852C-4538174C4CFE}</Project>
+      <Name>Standard Status Bar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Segway Modules\Tool Bars\Multi-Level Tool Bar\Multi-Level Tool Bar.csproj">
+      <Project>{04C20611-1CA9-4671-A8CE-8867BA8D9938}</Project>
+      <Name>Multi-Level Tool Bar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Segway Modules\WPFResources\WPFResources.csproj">
+      <Project>{69b7e08b-58a0-42bd-9ac2-a93568c46a0e}</Project>
+      <Name>WPFResources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Segway Services\MSSQL\Runtime Logs Web Service Client\Runtime Logs Web Service Client.csproj">
+      <Project>{665FB643-4CD8-4540-AAA5-4212E219536C}</Project>
+      <Name>Runtime Logs Web Service Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Segway Services\MSSQL\SART 2012 Web Service Client\SART 2012 Web Service Client.csproj">
+      <Project>{649B26FE-1353-4149-9315-1C17065D0B55}</Project>
+      <Name>SART 2012 Web Service Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Segway Services\MySQL\BugZilla Web Service Client\BugZilla Web Service Client.csproj">
+      <Project>{3265E043-263B-4F61-BA5B-D4D07D36156A}</Project>
+      <Name>BugZilla Web Service Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SART Infrastructure\SART Infrastructure.csproj">
+      <Project>{CA4B610F-7FD2-4DF8-BA3D-5D78AA3E0EF2}</Project>
+      <Name>SART Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Bug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Events\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>"c:\Segway\Update AssemblyInfo\Update AssemblyInfo.exe" /P "$(ProjectPath)"</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="Segway.Modules.Diagnostic.Diagnostic_Control"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:prism="http://www.codeplex.com/CompositeWPF"
+             xmlns:inf="clr-namespace:Segway.Modules.ShellControls;assembly=SegwayShellControls"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:shared="http://schemas.actiprosoftware.com/winfx/xaml/shared"
+             xmlns:views="http://schemas.actiprosoftware.com/winfx/xaml/views"
+             xmlns:wpfres="clr-namespace:Segway.WPFResources;assembly=WPFResources"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="600">
+    
+    
+    <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <!--<TextBlock Text="Diagnostics stuff shall go here" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="Red" FontSize="36" FontFamily="Tahoma"/>-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="1" Grid.Column="0" Margin="0" BorderThickness="0" VerticalAlignment="Stretch">
+            <ContentControl x:Name="test" VerticalAlignment="Top" prism:RegionManager.RegionName="{x:Static inf:RegionNames.VerticalToolbarRegion}" Focusable="False" Visibility="Visible"/>
+        </Border>
+        <Border  Grid.Row="2" Grid.Column="1"  Margin="0" BorderThickness="0">
+            <ContentControl prism:RegionManager.RegionName="{x:Static inf:RegionNames.SubMainRegion}" Focusable="False" BorderBrush="Red" BorderThickness="2" Margin="0,0,5,5" />
+        </Border>
+    </Grid>
+</UserControl>

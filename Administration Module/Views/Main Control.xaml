@@ -1,0 +1,252 @@
+<UserControl x:Class="Segway.Modules.Administration.Main_Control"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:act="http://schemas.actiprosoftware.com/winfx/xaml/propgrid"
+             xmlns:wpfres="clr-namespace:Segway.WPFResources;assembly=WPFResources"
+             xmlns:local="clr-namespace:Segway.Modules.Administration"
+             xmlns:themes="http://schemas.actiprosoftware.com/winfx/xaml/themes"
+             xmlns:dtpick="clr-namespace:Segway.Modules.Control;assembly=DateTimePicker"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="1400">
+
+    <Control.Resources>
+        <local:Negate_Converter x:Key="Negate" />
+    </Control.Resources>
+
+    <Grid>
+        <TabControl Grid.Row="1" Margin="5" Background="Transparent">
+            <TabItem Header="Work Order Management">
+            </TabItem>
+            <TabItem Header="User/Dealer Management">
+            </TabItem>
+            <TabItem Header="SART Settings">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="7*"/>
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition Width="5*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="35"  />
+                        <RowDefinition Height="227*"/>
+                        <RowDefinition Height="40" />
+                        <RowDefinition Height="50" />
+                    </Grid.RowDefinitions>
+
+
+                    <Popup Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="5" Width="Auto" Height="Auto"
+                           IsOpen="{Binding Path=Popup_SART_Settings_Open, Mode=TwoWay}" StaysOpen="False" Placement="Center">
+                        <Border Width="1000" Height="Auto" Background="{Binding Path=Popup_SART_Settings_Color, Mode=TwoWay}" BorderBrush="Black" BorderThickness="2" >
+                            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                                <TextBlock Text="{Binding Path=Popup_SART_Settings_Message, Mode=TwoWay}" FontSize="16" Margin="40,25" HorizontalAlignment="Center" />
+                            </ScrollViewer>
+                        </Border>
+                    </Popup>
+
+
+                    <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Text="SART Settings" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock Grid.Row="1" Grid.Column="1" Text="Settings List" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock Grid.Row="1" Grid.Column="3" Text="Properties" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+                    <ListView Grid.Row="2" Grid.Column="1"  BorderThickness="1" FontFamily="Tahoma" ScrollViewer.CanContentScroll="True" 
+                              ItemContainerStyle="{DynamicResource {ComponentResourceKey ResourceId=ListViewItemStyleOne, TypeInTargetAssembly={x:Type wpfres:ListViews}}}"
+                              Style="{DynamicResource {ComponentResourceKey ResourceId=ListViewStyleOne, TypeInTargetAssembly={x:Type wpfres:ListViews}}}"
+                              BorderBrush="{DynamicResource {ComponentResourceKey ResourceId=ControlBorderBrush, TypeInTargetAssembly={x:Type wpfres:Brushes}}}"                      
+                              ItemsSource="{Binding Path=Settings_List, Mode=TwoWay}"  SelectedItem="{Binding Path=Selected_Settings, Mode=TwoWay}"
+                              wpfres:GridViewSort.AutoSort="True"                      wpfres:GridViewSort.ShowSortGlyph="True"
+                              ScrollViewer.VerticalScrollBarVisibility="Auto"          ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                              >
+                        <ListView.View>
+                            <GridView AllowsColumnReorder="True" ColumnHeaderContainerStyle="{DynamicResource {ComponentResourceKey ResourceId=GridViewColumnHeaderStyleOne, TypeInTargetAssembly={x:Type wpfres:ListViews}}}">
+                                <GridViewColumn Header="Setting Name" DisplayMemberBinding="{Binding Path=Name}" wpfres:GridViewSort.PropertyName="Name" Width="100"/>
+                                <GridViewColumn Header="Timestamp" DisplayMemberBinding="{Binding Path=Date_Time_Entered}" wpfres:GridViewSort.PropertyName="Date_Time_Entered" Width="Auto"/>
+                                <GridViewColumn Header="Wake Start" DisplayMemberBinding="{Binding Path=Delay_Wake_Start}" wpfres:GridViewSort.PropertyName="Delay_Wake_Start" Width="Auto"/>
+                                <GridViewColumn Header="Start Applet" DisplayMemberBinding="{Binding Path=Timeout_Start_Applet}" wpfres:GridViewSort.PropertyName="Timeout_Start_Applet" Width="Auto"/>
+                                <GridViewColumn Header="Start Applet Response" DisplayMemberBinding="{Binding Path=Timeout_Start_Applet_Response}" wpfres:GridViewSort.PropertyName="Timeout_Start_Applet_Response" Width="Auto"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+
+
+                    <act:PropertyGrid Grid.Row="2" Grid.Column="3" IsSummaryVisible="False"  SelectedObject="{Binding Path=Selected_Settings, Mode=TwoWay}" />
+
+                    <StackPanel Grid.Row="3"  Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button Content="Refresh"  Height="25" Margin="20, 0" Command="{Binding Path=LoadSARTSettingsCommand}" Width="100"
+                            Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"  
+                            />
+                        <Button Content="Add"  Height="25" Margin="20, 0" Command="{Binding Path=AddSARTSettingsCommand}" Width="100"
+                            Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"  
+                            />
+                        <Button Content="Delete"  Height="25" Margin="20, 0" Command="{Binding Path=DelSARTSettingsCommand}" Width="100"
+                            Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"  
+                            />
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="3" Grid.Column="3" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button Content="Save"  Height="25" Command="{Binding Path=SaveSARTSettingsCommand}" Width="100" Margin="20, 0" 
+                            Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"  
+                            HorizontalAlignment="Center" VerticalAlignment="Center"
+                            />
+                        <Button Content="Copy ID"  Height="25" Command="{Binding Path=CopySARTSettingsCommand}" Width="100" Margin="20, 0" 
+                            Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"  
+                            HorizontalAlignment="Center" VerticalAlignment="Center"
+                            />
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Part/Model Management">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition Height="2*"/>
+                    </Grid.RowDefinitions>
+
+                    <Border Grid.Row="0" BorderBrush="Black" BorderThickness="1" />
+                    <Border Grid.Row="1" BorderBrush="Black" BorderThickness="1,0,1,1" />
+                    <Grid Grid.Row="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="10"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="500"/>
+                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Popup Grid.Row="1" Grid.RowSpan="1" Grid.Column="1" Grid.ColumnSpan="2" Width="Auto" Height="Auto" AllowsTransparency="True"
+                           IsOpen="{Binding Path=PNPT_PopupOpen, Mode=TwoWay}" StaysOpen="False" Placement="Center">
+                            <Border Width="800" Height="Auto" Background="{Binding Path=PNPT_PopupColor, Mode=TwoWay}" BorderBrush="Black" BorderThickness="2" >
+                                <TextBlock Text="{Binding Path=PNPT_PopupMessage, Mode=TwoWay}" FontSize="16" Margin="40,25" HorizontalAlignment="Center" TextWrapping="Wrap" />
+                            </Border>
+                        </Popup>
+
+
+                        <TextBlock Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0" HorizontalAlignment="Center" Text="Part Number/Type Management" FontSize="20" FontFamily="Tahoma" VerticalAlignment="Center"/>
+                        <ListView Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  x:Name="PartList"
+                              ScrollViewer.CanContentScroll="True" Margin="5"
+                              ItemContainerStyle="{DynamicResource {ComponentResourceKey ResourceId=ListViewItemStyleOne, TypeInTargetAssembly={x:Type wpfres:ListViews}}}"
+                              BorderThickness="1" FontFamily="Tahoma"
+                              ScrollViewer.VerticalScrollBarVisibility="Auto"
+                              ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                              Style="{DynamicResource {ComponentResourceKey ResourceId=ListViewStyleOne, TypeInTargetAssembly={x:Type wpfres:ListViews}}}"
+                              BorderBrush="{DynamicResource {ComponentResourceKey ResourceId=ControlBorderBrush, TypeInTargetAssembly={x:Type wpfres:Brushes}}}"                      
+                              ItemsSource="{Binding Path=Part_List, Mode=TwoWay}"
+                              SelectedItem="{Binding Path=Selected_Part, Mode=TwoWay}"
+                              wpfres:GridViewSort.AutoSort="True"
+                              wpfres:GridViewSort.ShowSortGlyph="True"
+                              >
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="MouseDoubleClick">
+                                    <i:InvokeCommandAction Command="{Binding ToolsCommand}"/>
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                            <ListView.View>
+                                <GridView AllowsColumnReorder="True" ColumnHeaderContainerStyle="{DynamicResource {ComponentResourceKey ResourceId=GridViewColumnHeaderStyleOne, TypeInTargetAssembly={x:Type wpfres:ListViews}}}">
+                                    <!--<GridViewColumn Header="ID" DisplayMemberBinding="{Binding ID}" wpfres:GridViewSort.PropertyName="ID" Width="50"/>-->
+                                    <GridViewColumn Header="Service Number" DisplayMemberBinding="{Binding Service_Part_Number}" wpfres:GridViewSort.PropertyName="Service_Part_Number" Width="Auto"/>
+                                    <GridViewColumn Header="Assembly Number" DisplayMemberBinding="{Binding Assembly_Part_Number}" wpfres:GridViewSort.PropertyName="Assembly_Part_Number" Width="Auto"/>
+                                    <GridViewColumn Header="Part Type" DisplayMemberBinding="{Binding Assembly_Part_Type}" wpfres:GridViewSort.PropertyName="Part_Type" Width="Auto"/>
+                                    <GridViewColumn Header="Model" DisplayMemberBinding="{Binding Assembly_Model}" wpfres:GridViewSort.PropertyName="Model" Width="Auto"/>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+
+                        <act:PropertyGrid Grid.Row="1" Grid.Column="2" Margin="5" IsSummaryVisible="False"
+                                      SelectedObject="{Binding Path=Selected_Part, Mode=TwoWay}"
+                                       />
+                        <!--                    
+                        <act:PropertyGridPropertyItem ValueName="ID"                 DisplayName="Record ID"    Description="This is the record number in the table." IsReadOnly="True"  />
+                        <act:PropertyGridPropertyItem ValueName="Part_Number"        DisplayName="Part Number"  Description="The part number (item) as found in Syteline." />
+                        <act:PropertyGridPropertyItem ValueName="Part_Type"          DisplayName="Part Type"    Description="The part type.This is used in generating a record in the production line assembly table." />
+                        <act:PropertyGridPropertyItem ValueName="Model"              DisplayName="Model"        Description="This is an optional field. This is used in generating a record in the production line assembly table." />
+                        <act:PropertyGridPropertyItem ValueName="Date_Time_Entered"  DisplayName="Date Created" Description="The timestamp when this record was created. This is a Read-Only field." IsReadOnly="True"  />
+                        <act:PropertyGridPropertyItem ValueName="Date_Time_Updated"  DisplayName="Date Updated" Description="The timestamp when this record was last updated. This is a Read-Only field." IsReadOnly="True"  />
+                    </act:PropertyGrid>
+-->
+
+                        <StackPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Button Content="Add" Command="{Binding PNTM_AddCommand}" Width="100" Margin="25,5" Height="30"
+                                Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"
+                                />
+                            <Button Content="Delete" Command="{Binding PNTM_DeleteCommand}" Width="100" Margin="25,5" Height="30"
+                                Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"
+                                />
+                            <Button Content="Refresh" Command="{Binding PNTM_RefreshCommand}" Width="100" Margin="25,5" Height="30"
+                                Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"
+                                />
+                            <Button Content="Save Selected" Command="{Binding PNTM_SaveCommand}" Width="100" Margin="25,5" Height="30"
+                                Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"
+                                />
+                            <Button Content="Save All" Command="{Binding PNTM_SaveAllCommand}" Width="100" Margin="25,5" Height="30"
+                                Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"
+                                />
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="35"/>
+                            <RowDefinition Height="35"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="35"/>
+                            <RowDefinition Height="35"/>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="500"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Popup Grid.Row="2" Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="4" Width="Auto" Height="Auto"
+                               IsOpen="{Binding Path=Change_Model_PopupOpen, Mode=TwoWay}" StaysOpen="False" Placement="Center">
+                            <Border Width="800" Height="Auto" Background="{Binding Path=Change_Model_PopupColor, Mode=TwoWay}" BorderBrush="Black" BorderThickness="2" CornerRadius="10" >
+                                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                                    <TextBlock Text="{Binding Path=Change_Model_PopupMessage, Mode=TwoWay}" FontSize="16" Margin="40,25" HorizontalAlignment="Center"  />
+                                </ScrollViewer>
+                            </Border>
+                        </Popup>
+
+                        <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Text="Convert Model" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" />
+
+                        <StackPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="Please Enter PT Serial Number: " FontSize="18" />
+                            <TextBox Text="{Binding Path=CngModelSerial, UpdateSourceTrigger=PropertyChanged}" Width="200" Margin="20,0,0,0" FontSize="18" />
+                        </StackPanel>
+                        <Border Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" BorderBrush="Black" BorderThickness="1" />
+                        <Border Grid.Row="3" Grid.Column="1" BorderBrush="Black" BorderThickness="0,0,1,0" />
+                        <Border Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" BorderBrush="Black" BorderThickness="0,2,0,0" />
+                        <Border Grid.Row="6" Grid.Column="2" BorderBrush="Black" BorderThickness="1" />
+                        <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding Path=ChngModelCurrentPartNumber, Mode=TwoWay}" FontSize="18" Margin="3,0" VerticalAlignment="Center" />
+                        <TextBlock Grid.Row="3" Grid.Column="2" Text="{Binding Path=ChngModelCurrentDecript, Mode=TwoWay}" FontSize="18" Margin="3,0" VerticalAlignment="Center" />
+                        <TextBlock Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Text="Change to" FontSize="22" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        <ComboBox  Grid.Row="6" Grid.Column="1" ItemsSource="{Binding Path=ChngModelNewPartNumberList, Mode=TwoWay}" FontSize="18" 
+                                   SelectedItem="{Binding Path=SelectedNewPartNumber, Mode=TwoWay}" Margin="0,0,5,0" />
+                        <TextBlock Grid.Row="6" Grid.Column="2" Text="{Binding Path=ChngModelNewDescript, Mode=TwoWay}" FontSize="18" Margin="3,0" VerticalAlignment="Center" />
+
+                        <Button Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" Content="Convert" Height="25" Margin="5,0" 
+                                Command="{Binding Path=ChangeModelCommand}" Width="100" VerticalAlignment="Bottom"
+                                Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"  
+                                />
+
+                    </Grid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>

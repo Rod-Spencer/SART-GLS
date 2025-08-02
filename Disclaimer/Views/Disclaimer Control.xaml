@@ -1,0 +1,93 @@
+<UserControl x:Class="Segway.Service.Disclaimer.Disclaimer_Control"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:shared="http://schemas.actiprosoftware.com/winfx/xaml/shared"
+             xmlns:wpfres="clr-namespace:Segway.WPFResources;assembly=WPFResources"
+             xmlns:segway="http://service.segway.com/schemas/"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="500">
+    <Grid>
+        <Border x:Name="borderMain" Background="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:Brushes}, ResourceId=LightBackgroundBrush}}"
+                Opacity="1.0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                />
+        <Border x:Name="borderNotice" Height="270" Width="450" CornerRadius="3"
+                Background="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:Brushes}, ResourceId=LightBackgroundBrush}}"
+                Opacity="1.0" HorizontalAlignment="Center" VerticalAlignment="Center" BorderThickness="1.5"
+                BorderBrush="{DynamicResource {ComponentResourceKey ResourceId=ControlBorderBrush, TypeInTargetAssembly={x:Type wpfres:Brushes}}}" 
+                >
+            <Border.Effect>
+                <DropShadowEffect Opacity="0.5" BlurRadius="4"/>
+            </Border.Effect>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="13"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Border Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" CornerRadius="3,3,0,0" Background="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:Brushes}, ResourceId=TitleBarGradientBrush}}"/>
+                    <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" CornerRadius="3,3,0,0" Background="Snow" Opacity="0.3"/>
+                    <Image Grid.Column="0" Grid.RowSpan="2" Source="{Binding Path=TitleImage}" Height="25" Width="25" Opacity="0.8">
+                        <Image.Effect>
+                            <DropShadowEffect Color="Snow" BlurRadius="4" ShadowDepth="4" Opacity="0.7"/>
+                        </Image.Effect>
+                    </Image>
+                    <TextBlock Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" Text="Notice" Foreground="Snow" Opacity="0.9" VerticalAlignment="Center" Margin="5,0,0,0" FontSize="18.667" FontFamily="Tahoma">
+                    </TextBlock>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="75"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <shared:ReflectionContentControl Grid.Row="1" x:Name="reflection1" ReflectionHeight="50" ReflectionSkewAngleX="0" ReflectionStartOpacity="0.5" ReflectionEndOpacity="0.0" ReflectionEndOffset="0.8" ReflectionMargin="0">
+                        <Image Height="60" Width="60" Opacity="0.85" VerticalAlignment="Top" HorizontalAlignment="Center" Source="{Binding DisclaimerImage}" >
+                            <Image.Effect>
+                                <DropShadowEffect Opacity="0.5"/>
+                            </Image.Effect>
+                        </Image>
+                    </shared:ReflectionContentControl>
+                    <StackPanel Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1" >
+                        <TextBlock FontFamily="Tahoma" TextWrapping="Wrap" Opacity="0.65" 
+                                   Text="You are about to extract data from a Segway PT. By clicking on the Accept button, you are agreeing to use the data retrieved from the Segway PT for diagnosing the service repairs for the Segway PT and not for any other purpose including injury incident investigation.">
+                        </TextBlock>
+                        <TextBlock FontFamily="Tahoma" TextWrapping="Wrap" Opacity="0.65"  Text=""/>
+
+                        <TextBlock FontFamily="Tahoma" TextWrapping="Wrap" Opacity="0.65" 
+                                   Text="Click the Do Not Accept button and the extraction process will not continue.">
+                        </TextBlock>
+                        <TextBlock FontFamily="Tahoma" TextWrapping="Wrap" Opacity="0.65"  Text=""/>
+
+                        <TextBlock FontFamily="Tahoma" TextWrapping="Wrap" Opacity="0.65" 
+                                   Text="You are required to report all injury incidents to Segway Inc." >
+                        </TextBlock>
+                    </StackPanel>
+                    <Button Grid.Row="2" Grid.Column="3" Content="Accept" Width="120" Height="30" Command="{Binding DisclaimerAcceptCommand}"
+                            Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:Buttons}, ResourceId=ButtonStyleOne}}"
+                            HorizontalAlignment="Right" Margin="0,5,10,10" TabIndex="8" IsDefault="True">
+                    </Button>
+                    <Button Grid.Row="2" Grid.Column="2" Content="Do Not Accept" Width="120" Height="30" Command="{Binding DisclaimerRejectCommand}"
+                            Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:Buttons}, ResourceId=ButtonStyleOne}}"
+                            HorizontalAlignment="Right" Margin="0,5,10,10" TabIndex="8" IsDefault="True">
+                    </Button>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

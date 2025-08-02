@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Folder_Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FolderData>
+    <File_Data>
+      <Name>App Data\ToolBar Groups.xml</Name>
+      <CRC>1980206794</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>App Data\ToolBar Permissions.json</Name>
+      <CRC>1508996068</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>App Data\ToolBar Permissions.xml</Name>
+      <CRC>1784233917</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>App.config</Name>
+      <CRC>805147301</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>App.xaml</Name>
+      <CRC>-558769211</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>App.xaml.cs</Name>
+      <CRC>1440870092</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Global Settings.cs</Name>
+      <CRC>-193701921</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\Close-Icon.png</Name>
+      <CRC>820709963</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\configuration.png</Name>
+      <CRC>-698014389</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\DetailedImage.png</Name>
+      <CRC>88700472</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\diagnostics.png</Name>
+      <CRC>-1448004934</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\eventlogs.png</Name>
+      <CRC>1760345654</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\info.png</Name>
+      <CRC>-343572029</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\loadcode.png</Name>
+      <CRC>730197357</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\login.png</Name>
+      <CRC>1226106198</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\Maximize-Icon.png</Name>
+      <CRC>-371266025</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\Minimize-Icon.png</Name>
+      <CRC>1000306918</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\Restore-Icon.png</Name>
+      <CRC>1064731893</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\seguy.png</Name>
+      <CRC>789946628</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\seguywhite.png</Name>
+      <CRC>-450512890</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\segwaylogo.png</Name>
+      <CRC>1106729120</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\SummaryImage.png</Name>
+      <CRC>-2140523239</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\TitleBarImage.png</Name>
+      <CRC>1172825906</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\workorder.png</Name>
+      <CRC>-1676277374</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>packages.config</Name>
+      <CRC>177334841</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Properties\DesignTimeResources.xaml</Name>
+      <CRC>2097625141</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Properties\Licenses.licx</Name>
+      <CRC>1815951168</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Properties\Resources.Designer.cs</Name>
+      <CRC>73735268</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Properties\Resources.resx</Name>
+      <CRC>938936645</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Properties\Settings.Designer.cs</Name>
+      <CRC>2059729252</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Properties\Settings.settings</Name>
+      <CRC>25279893</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>RST Bootstrapper.cs</Name>
+      <CRC>1306620933</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Shell.xaml</Name>
+      <CRC>-1841038779</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Shell.xaml.cs</Name>
+      <CRC>559744480</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>tool.ico</Name>
+      <CRC>728493021</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>ToolBar Groups.xml</Name>
+      <CRC>2028385543</CRC>
+    </File_Data>
+  </FolderData>
+  <RefProjData>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Controls\Add Window\Add Window Module.csproj</Name>
+      <Version>1.0.5866.754</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\Administration\Administration Module.csproj</Name>
+      <Version>1.0.5866.490</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\Administration Module\Administration Module.csproj</Name>
+      <Version>1.0.3265.1745</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\All Diagnostics\All Diagnostics Module.csproj</Name>
+      <Version>1.0.5866.3226</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\AppSettings Helper\AppSettings Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\AppSettings Helper\AppSettings Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\Oracle\Assembly Line Web Service Client\Assembly Line Web Service Client.csproj</Name>
+      <Version>1.0.3303.406</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\Authentication Objects\Authentication Objects.csproj</Name>
+      <Version>1.0.5866.528</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Authentication Objects\Authentication Objects.csproj</Name>
+      <Version>1.0.5594.448</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\REST Services\Authentication\Authentication Web Service Client REST\Authentication Web Service Client REST.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\MSSQL\Authentication Web Service Client\Authentication Web Service Client.csproj</Name>
+      <Version>1.0.5580.725</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Battery Info\Battery Info Module.csproj</Name>
+      <Version>1.0.5866.1289</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Battery Objects\Battery Objects.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\Blackbox\Blackbox Module.csproj</Name>
+      <Version>1.0.5866.795</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\BlowFish\BlowFish.csproj</Name>
+      <Version>1.0.5585.75</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Bug Objects\Bug Objects.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\Bug Tracking\Bug Tracking Module.csproj</Name>
+      <Version>1.0.3333.306</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Bug Tracking\Bug Tracking Module.csproj</Name>
+      <Version>1.0.5585.652</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Bug Tracking\Bug Tracking REST.csproj</Name>
+      <Version>1.0.5866.2163</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\REST Services\BugZilla\BugZilla Web Service Client REST\BugZilla Web Service Client REST.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\BugZilla Web Service Client REST\BugZilla Web Service Client REST.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\MySQL\BugZilla Web Service Client\BugZilla Web Service Client.csproj</Name>
+      <Version>1.0.5581.522</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\CAN Objects\CAN Objects.csproj</Name>
+      <Version>1.0.5593.320</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\CAN2 Commands\CAN2 Commands.csproj</Name>
+      <Version>1.0.5594.1720</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\CAN2 Messages\CAN2 Messages.csproj</Name>
+      <Version>1.0.5593.627</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\CAN2 Systec\CAN2 Systec.csproj</Name>
+      <Version>1.0.5593.502</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\CAN2\CAN2.csproj</Name>
+      <Version>1.0.5593.818</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\COFF\COFF.csproj</Name>
+      <Version>1.0.5594.640</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Controls\Comment Control\Comment Module.csproj</Name>
+      <Version>1.0.5866.285</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Common\Common.csproj</Name>
+      <Version>1.0.5588.2313</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\Common\Common.csproj</Name>
+      <Version>1.0.5866.2329</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\CU Code Load\CU Code Load Module.csproj</Name>
+      <Version>1.0.5866.3657</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\CU Log Module\CU Log Module.csproj</Name>
+      <Version>1.0.5866.3683</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\DatabaseHelper\Database Objects.csproj</Name>
+      <Version>1.0.5580.1579</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\DatabaseHelper\DatabaseHelper.csproj</Name>
+      <Version>1.0.5579.1577</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Controls\DateTime Picker\DateTime Picker\DateTime Picker.csproj</Name>
+      <Version>1.0.5625.79</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\Diagnostics Helper\Diagnostics Helper.csproj</Name>
+      <Version>1.0.5866.1447</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\Email Segway\Email Segway Module.csproj</Name>
+      <Version>1.0.5585.1062</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\Exception Helper\Exception Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Exception Helper\Exception Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Header Bar\Header Bar Module.csproj</Name>
+      <Version>1.0.5625.194</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Image Helper\Image Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Controls\JTags\JTags Module.csproj</Name>
+      <Version>1.0.5866.640</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Tool Bars\List Box Tool Bar\List Box Tool Bar.csproj</Name>
+      <Version>1.0.3185.926</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Tool Bars\List Box Vertical Tool Bar\List Box Vertical Tool Bar.csproj</Name>
+      <Version>1.0.5866.436</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Logger Helper\Logger Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\Logger Helper\Logger Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Manufacturing Objects\Manufacturing Objects.csproj</Name>
+      <Version>1.0.5593.215</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\Oracle\Manufacturing Tables Client\Manufacturing Tables Client.csproj</Name>
+      <Version>1.0.5581.1232</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\MSSQL\Manufacturing Tables Web Service Client\Manufacturing Tables Web Service Client.csproj</Name>
+      <Version>1.0.5581.824</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Manufacturing Web Service Client REST\Manufacturing Web Service Client REST.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\MSSQL\Manufacturing Web Service Client\Manufacturing Web Service Client.csproj</Name>
+      <Version>1.0.5581.244</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\MotorTests\MotorTests.csproj</Name>
+      <Version>1.0.5866.4069</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Tool Bars\Multi-Level Tool Bar\Multi-Level Tool Bar.csproj</Name>
+      <Version>1.0.5866.269</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\NHibernateBase\NHibernateBase.csproj</Name>
+      <Version>1.0.5588.196</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\PDF\PDF.csproj</Name>
+      <Version>1.0.5585.3350</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\3rd Party Libraries\PDFsharp\PDFsharp\code\PdfSharp\PdfSharp.csproj</Name>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Controls\Progression Log Viewer\Progression Log Viewer.csproj</Name>
+      <Version>1.0.5866.295</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Controls\Progression Window\Progression Window.csproj</Name>
+      <Version>1.0.5866.340</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\PT BSA\PT BSA Module.csproj</Name>
+      <Version>1.0.5866.3453</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\PT LED\PT LED Module.csproj</Name>
+      <Version>1.0.5866.3469</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\Repair Module\Repair Module.csproj</Name>
+      <Version>1.0.5866.3263</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\SART Reports\Reports Module.csproj</Name>
+      <Version>1.0.5866.1469</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\Ride Test\Ride Test Module.csproj</Name>
+      <Version>1.0.5866.1188</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\RiderDetect\RiderDetect Module.csproj</Name>
+      <Version>1.0.5866.3474</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\REST Services\Logs\Runtime Logs Web Service Client REST\Runtime Logs Web Service Client REST.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\MSSQL\Runtime Logs Web Service Client\Runtime Logs Web Service Client.csproj</Name>
+      <Version>1.0.5580.699</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\MSSQL\SART 2012 Web Service Client\SART 2012 Web Service Client.csproj</Name>
+      <Version>1.0.5580.748</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\SART Diagnostic\SART Diagnostic Module.csproj</Name>
+      <Version>1.0.5866.2206</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\Disclaimer\SART Disclaimer Module.csproj</Name>
+      <Version>1.0.5866.1319</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\SART Infrastructure\SART Infrastructure.csproj</Name>
+      <Version>1.0.5866.1819</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\SART Objects\SART Objects.csproj</Name>
+      <Version>1.0.5594.1773</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\REST Services\SART\SART Web Service Client REST\SART Web Service Client REST.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Login Modules\Segway Login Module - REST\Segway Login Module REST.csproj</Name>
+      <Version>1.0.5866.2862</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Login Modules\Segway Login Module\Segway Login Module.csproj</Name>
+      <Version>1.0.5630.1823</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Segway Objects\Segway Objects.csproj</Name>
+      <Version>1.0.5593.4236</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\ShellControls\Segway ShellControls Module.csproj</Name>
+      <Version>1.0.5866.1219</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\SQL Reporting Objects\SQL Reporting Objects.csproj</Name>
+      <Version>1.0.5588.224</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Status Bars\Standard Status Bar\Standard Status Bar.csproj</Name>
+      <Version>1.0.5866.1161</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\MSSQL\SyteLine External Web Service Client\Syteline External Web Service Client.csproj</Name>
+      <Version>1.0.5581.1769</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\Syteline Objects\Syteline Objects.csproj</Name>
+      <Version>1.0.5866.1642</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Syteline Objects\Syteline Objects.csproj</Name>
+      <Version>1.0.5594.1564</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\REST Services\Syteline\Syteline Web Service Client REST\Syteline Web Service Client REST.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Title Bars\Title Bar Min Max Close\Title Bar Min Max Close.csproj</Name>
+      <Version>1.0.5866.1202</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Controls\Under Construction\Under Construction.csproj</Name>
+      <Version>1.0.3438.99</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\Updater Objects\Updater Objects.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Updater Objects\Updater Objects.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\REST Services\Updater\Updater Web Service Client REST\Updater Web Service Client REST.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\MSSQL\Updater Web Service Client\Updater Web Service Client.csproj</Name>
+      <Version>1.0.5580.584</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\Work Order Module\Work Order Module.csproj</Name>
+      <Version>1.0.5866.4381</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\WPFResources\WPFResources.csproj</Name>
+      <Version>1.0.5625.372</Version>
+    </Reference_Project_Data>
+  </RefProjData>
+  <Changed>true</Changed>
+</Folder_Data>

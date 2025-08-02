@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Groups>
+  <Group>
+    <Name>Expert|True|True</Name>
+    <ToolBar_Item>
+      <Name>Event Logs</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Load Code</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Administration</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Work Order</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Diagnostics</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Repairs</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Ride Test</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Reports</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Email Segway</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Log Out</Name>
+    </ToolBar_Item>
+  </Group>
+  <Group>
+    <Name>Advanced|True|True</Name>
+    <ToolBar_Item>
+      <Name>Event Logs</Name>
+      <Name>Load Code</Name>
+      <Name>Work Order</Name>
+      <Name>Diagnostics</Name>
+      <Name>Repairs</Name>
+      <Name>Ride Test</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+    </ToolBar_Item>
+  </Group>
+  <Group>
+    <Name>Intermediate|True|True</Name>
+    <ToolBar_Item>
+      <Name>Event Logs</Name>
+      <Name>Load Code</Name>
+      <Name>Work Order</Name>
+      <Name>Diagnostics</Name>
+      <Name>Repairs</Name>
+      <Name>Ride Test</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+    </ToolBar_Item>
+  </Group>
+  <Group>
+    <Name>Basic|True|True</Name>
+    <ToolBar_Item>
+      <Name>Event Logs</Name>
+      <Name>Work Order</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+    </ToolBar_Item>
+  </Group>
+  <Group>
+    <Name>Expert|False|True</Name>
+    <ToolBar_Item>
+      <Name>Event Logs</Name>
+      <Name>Administration</Name>
+      <Name>Work Order</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+    </ToolBar_Item>
+  </Group>
+  <Group>
+    <Name>Advanced|False|True</Name>
+    <ToolBar_Item>
+      <Name>Event Logs</Name>
+      <Name>Work Order</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+    </ToolBar_Item>
+  </Group>
+  <Group>
+    <Name>Intermediate|False|True</Name>
+    <ToolBar_Item>
+      <Name>Event Logs</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Work Order</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Reports</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Email Segway</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Log Out</Name>
+    </ToolBar_Item>
+  </Group>
+  <Group>
+    <Name>Basic|False|True</Name>
+    <ToolBar_Item>
+      <Name>Event Logs</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Work Order</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Reports</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Email Segway</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Log Out</Name>
+    </ToolBar_Item>
+  </Group>
+  <Group>
+    <Name>Expert|True|False</Name>
+    <ToolBar_Item>
+      <Name>Event Logs</Name>
+      <Name>Administration</Name>
+      <Name>Work Order</Name>
+      <Name>Repairs</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+    </ToolBar_Item>
+  </Group>
+  <Group>
+    <Name>Advanced|True|False</Name>
+    <ToolBar_Item>
+      <Name>Event Logs</Name>
+      <Name>Load Code</Name>
+      <Name>Work Order</Name>
+      <Name>Diagnostics</Name>
+      <Name>Repairs</Name>
+      <Name>Ride Test</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+    </ToolBar_Item>
+  </Group>
+  <Group>
+    <Name>Intermediate|True|False</Name>
+    <ToolBar_Item>
+      <Name>Event Logs</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Load Code</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Work Order</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Diagnostics</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Repairs</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Ride Test</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Reports</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Email Segway</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Log Out</Name>
+    </ToolBar_Item>
+  </Group>
+  <Group>
+    <Name>Basic|True|False</Name>
+    <ToolBar_Item>
+      <Name>Event Logs</Name>
+      <Name>Work Order</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+    </ToolBar_Item>
+  </Group>
+  <Group>
+    <Name>Expert|False|False</Name>
+    <ToolBar_Item>
+      <Name>Event Logs</Name>
+      <Name>Administration</Name>
+      <Name>Work Order</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+    </ToolBar_Item>
+  </Group>
+  <Group>
+    <Name>Advanced|False|False</Name>
+    <ToolBar_Item>
+      <Name>Event Logs</Name>
+      <Name>Work Order</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+    </ToolBar_Item>
+  </Group>
+  <Group>
+    <Name>Intermediate|False|False</Name>
+    <ToolBar_Item>
+      <Name>Event Logs</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Work Order</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Reports</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Email Segway</Name>
+    </ToolBar_Item>
+    <ToolBar_Item>
+      <Name>Log Out</Name>
+    </ToolBar_Item>
+  </Group>
+  <Group>
+    <Name>Basic|False|False</Name>
+    <ToolBar_Item>
+      <Name>Event Logs</Name>
+      <Name>Work Order</Name>
+      <Name>Reports</Name>
+      <Name>Email Segway</Name>
+      <Name>Log Out</Name>
+    </ToolBar_Item>
+  </Group>
+</Groups>

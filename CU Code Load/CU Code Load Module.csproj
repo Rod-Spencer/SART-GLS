@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48385DF9-C74B-4E59-9658-AFDE71D96E10}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Segway.Modules.SART.CodeLoad</RootNamespace>
+    <AssemblyName>CU Code Load</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>.\bin\x86\Release\CU Code Load.xml</DocumentationFile>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\x86\Release\CU Code Load.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiproSoftware.Shared.Wpf, Version=14.1.601.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\3rd Party Libraries\Actipro\V14.1.0601\ActiproSoftware.Shared.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism">
+      <HintPath>..\..\..\..\..\..\3rd Party Libraries\Prism\Prism 4.1\Lib\Desktop\Microsoft.Practices.Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\..\..\..\..\..\3rd Party Libraries\Prism\Prism 4.1\Lib\Desktop\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.5.2.6\lib\net46\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Services\BSA Extract Code Information.cs" />
+    <Compile Include="Services\Reset BSA Code.cs" />
+    <Compile Include="View Models\CU Code ViewModel.cs" />
+    <Compile Include="View Models\CU Code ViewModel Interface.cs" />
+    <Page Include="Views\CU Code Control.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Views\CU Code Control.xaml.cs">
+      <DependentUpon>CU Code Control.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CU Code Control Interface.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CU Code Load Module.cs" />
+    <Compile Include="Services\Load CU Code.cs" />
+    <Compile Include="Services\Load BSA Code.cs" />
+    <Compile Include="Events\CU Code Load Events.cs" />
+    <Compile Include="Services\Reset CU Code.cs" />
+    <Compile Include="Services\Pre BSA Load.cs" />
+    <Compile Include="Services\Post BSA Load.cs" />
+    <Compile Include="Services\Create BSA Extract Object.cs" />
+    <Compile Include="Services\Update BSA Extract Object.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Libraries\Helper Libraries\CAN2 Commands\CAN2 Commands.csproj">
+      <Project>{15ba16d3-f818-4ab4-a310-ffb1f2224200}</Project>
+      <Name>CAN2 Commands</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\Helper Libraries\CAN2 Messages\CAN2 Messages.csproj">
+      <Project>{E90EF366-0D5C-422E-9F9A-2E2514E52069}</Project>
+      <Name>CAN2 Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\Helper Libraries\CAN2\CAN2.csproj">
+      <Project>{7EB5AF8E-EB47-432D-B268-90E936DFF183}</Project>
+      <Name>CAN2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\Helper Libraries\COFF\COFF.csproj">
+      <Project>{95CAD10D-18CC-4F6B-A0C1-DBE18EB603E5}</Project>
+      <Name>COFF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\Helper Libraries\Exception Helper\Exception Helper.csproj">
+      <Project>{44DEBF07-D35D-4173-8DFB-060B6C9AD167}</Project>
+      <Name>Exception Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\Helper Libraries\Image Helper\Image Helper.csproj">
+      <Project>{046E6821-06A8-4D32-B7A1-1F631ECA5D21}</Project>
+      <Name>Image Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\Helper Libraries\Logger Helper\Logger Helper.csproj">
+      <Project>{416D226E-CCBA-48EA-A58C-D7475F4B8347}</Project>
+      <Name>Logger Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\Manufacturing Web Service Client REST\Manufacturing Web Service Client REST.csproj">
+      <Project>{0C907361-A558-4B2E-9456-AAC16909CBAA}</Project>
+      <Name>Manufacturing Web Service Client REST</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\Object Libraries\Authentication Objects\Authentication Objects.csproj">
+      <Project>{F7469A29-2A38-4960-8D4A-0E6C2AA8F508}</Project>
+      <Name>Authentication Objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\Object Libraries\CAN Objects\CAN Objects.csproj">
+      <Project>{9c3de97e-aa31-4866-b390-a8ba05b2a949}</Project>
+      <Name>CAN Objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\Object Libraries\COFF Objects\COFF Objects.csproj">
+      <Project>{88635B6C-A482-4F39-AF82-B1F570D27B3A}</Project>
+      <Name>COFF Objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\Object Libraries\Database Objects\Database Objects.csproj">
+      <Project>{80919C1D-0FCD-4C24-888A-815914DCBC75}</Project>
+      <Name>Database Objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\Object Libraries\Login Objects\Login Objects.csproj">
+      <Project>{ED1BFE64-5785-4F44-B4D2-6F072EB1E62B}</Project>
+      <Name>Login Objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\Object Libraries\Manufacturing Objects\Manufacturing Objects.csproj">
+      <Project>{76A75EFF-BBDF-41E0-A768-91D9D5C336BC}</Project>
+      <Name>Manufacturing Objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\Object Libraries\NHibernateBase\NHibernateBase.csproj">
+      <Project>{CFA2BBF5-BF78-47A3-8722-C88FBAABD44E}</Project>
+      <Name>NHibernateBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\Object Libraries\SART Objects\SART Objects.csproj">
+      <Project>{a0a31ecd-990f-431e-842e-10cbb9b88514}</Project>
+      <Name>SART Objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Libraries\Object Libraries\Segway Objects\Segway Objects.csproj">
+      <Project>{19F5F1E6-00BC-47C8-974A-147E3D52633C}</Project>
+      <Name>Segway Objects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\REST Services\SART\SART Web Service Client REST\SART Web Service Client REST.csproj">
+      <Project>{E1650FEB-0FE7-435E-9908-D57266757A25}</Project>
+      <Name>SART Web Service Client REST</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Segway Modules\Controls\JTags\JTags Module.csproj">
+      <Project>{7cf4acdb-efab-41ca-86ca-1d9a6a7e1f42}</Project>
+      <Name>JTags Module</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Segway Modules\Controls\Progression Log Viewer\Progression Log Viewer.csproj">
+      <Project>{9ECABFC8-5616-4E48-A5BD-6C032706BEBB}</Project>
+      <Name>Progression Log Viewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Segway Modules\Header Bar\Header Bar Module.csproj">
+      <Project>{98500C9E-3A1B-4B5E-B6B0-368FBC834E62}</Project>
+      <Name>Header Bar Module</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Segway Modules\Login Modules\Segway Login Module - REST\Segway Login Module REST.csproj">
+      <Project>{0b8d61be-91e1-4d25-a768-8945e29b7d57}</Project>
+      <Name>Segway Login Module REST</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Segway Modules\ShellControls\Segway ShellControls Module.csproj">
+      <Project>{03055A48-F4AC-457C-A8CB-72584A8D511F}</Project>
+      <Name>Segway ShellControls Module</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Segway Modules\Status Bars\Standard Status Bar\Standard Status Bar.csproj">
+      <Project>{C79FA037-53EF-48C3-852C-4538174C4CFE}</Project>
+      <Name>Standard Status Bar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Segway Modules\Tool Bars\Multi-Level Tool Bar\Multi-Level Tool Bar.csproj">
+      <Project>{04C20611-1CA9-4671-A8CE-8867BA8D9938}</Project>
+      <Name>Multi-Level Tool Bar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Segway Modules\WPFResources\WPFResources.csproj">
+      <Project>{69B7E08B-58A0-42BD-9AC2-A93568C46A0E}</Project>
+      <Name>WPFResources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Diagnostics Helper\Diagnostics Helper.csproj">
+      <Project>{b1bd912a-0905-4575-8e05-0734bc572b96}</Project>
+      <Name>Diagnostics Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SART Infrastructure\SART Infrastructure.csproj">
+      <Project>{CA4B610F-7FD2-4DF8-BA3D-5D78AA3E0EF2}</Project>
+      <Name>SART Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Work Order Module\Work Order Module.csproj">
+      <Project>{93287335-5DA2-4EB2-9F67-447D11C3F19C}</Project>
+      <Name>Work Order Module</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\NoticeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\loadcode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>"c:\Segway\Update AssemblyInfo\Update AssemblyInfo.exe" /P "$(ProjectPath)"</PreBuildEvent>
+  </PropertyGroup>
+  <!--
+ To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+ -->
+</Project>

@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Folder_Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FolderData>
+    <File_Data>
+      <Name>..\..\..\..\Service Tools\Black Box Reporter\Black Box Reporter\App Data\Black Box Graphs Definitions.xml</Name>
+      <CRC>-771266025</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>app.config</Name>
+      <CRC>-1506224284</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Blackbox Module.cs</Name>
+      <CRC>-2082711152</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\Black Box Data Display List.cs</Name>
+      <CRC>-855570924</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\Black Box Data Display.cs</Name>
+      <CRC>1866990233</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\Black Box Data Graph Column.cs</Name>
+      <CRC>1543104327</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\Black Box Data Graph Data.cs</Name>
+      <CRC>-910880114</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\Black Box Data Graph.cs</Name>
+      <CRC>170919141</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\Black Box Graph Axis.cs</Name>
+      <CRC>-1201011992</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\Black Box Graph Size.cs</Name>
+      <CRC>1875662510</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\Black Box Graphs.cs</Name>
+      <CRC>-603112294</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\Black Box Header Display List.cs</Name>
+      <CRC>-1364376656</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\Black Box Header Display.cs</Name>
+      <CRC>544807537</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Enumerations\Black Box Axis Generation.cs</Name>
+      <CRC>224423333</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Enumerations\Black Box Graph Axis Types.cs</Name>
+      <CRC>1039928362</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Enumerations\Black Box Graph Legend Types.cs</Name>
+      <CRC>511135735</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Enumerations\BlackBox Statuses.cs</Name>
+      <CRC>2055454940</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Events\BlackBox EventID Event.cs</Name>
+      <CRC>212707668</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Events\BlackBox Open Extract Panel Event.cs</Name>
+      <CRC>-910927947</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Events\BlackBox Refresh Event.cs</Name>
+      <CRC>1571170754</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\BBExtract.png</Name>
+      <CRC>40428081</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\BBnew.png</Name>
+      <CRC>268758734</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\BBNoteIcon.png</Name>
+      <CRC>-1242759158</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\BBopen.png</Name>
+      <CRC>-1169462820</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\BBwarning.png</Name>
+      <CRC>-1573501415</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\BlackBox.png</Name>
+      <CRC>-2003893832</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\new.png</Name>
+      <CRC>268758734</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>packages.config</Name>
+      <CRC>177334841</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\Black Box Services Extract.cs</Name>
+      <CRC>-1297213256</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\Black Box Services Graph.cs</Name>
+      <CRC>983849832</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\Black Box Services.cs</Name>
+      <CRC>-965484051</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\Get BlackBox Data.cs</Name>
+      <CRC>-2107803123</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\BlackBox Extraction ViewModel Interface.cs</Name>
+      <CRC>-827360172</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\BlackBox Extraction ViewModel.cs</Name>
+      <CRC>-444306108</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\BlackBox Open ViewModel Interface.cs</Name>
+      <CRC>1270906532</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\BlackBox Open ViewModel.cs</Name>
+      <CRC>-792829996</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\Blackbox ViewModel Interface.cs</Name>
+      <CRC>-693374807</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\Blackbox ViewModel.cs</Name>
+      <CRC>1473875184</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Blackbox Control Interface.cs</Name>
+      <CRC>-187617725</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Blackbox Control.xaml</Name>
+      <CRC>-360613680</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Blackbox Control.xaml.cs</Name>
+      <CRC>-287983692</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Blackbox Extraction Control Interface.cs</Name>
+      <CRC>1757510471</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Blackbox Extraction Control.xaml</Name>
+      <CRC>-1845703642</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Blackbox Extraction Control.xaml.cs</Name>
+      <CRC>946860373</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Blackbox Open Control Interface.cs</Name>
+      <CRC>1531962891</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Blackbox Open Control.xaml</Name>
+      <CRC>-396354466</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Blackbox Open Control.xaml.cs</Name>
+      <CRC>577517195</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\BlackBox Open Settings Control.xaml</Name>
+      <CRC>1991193164</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\BlackBox Open Settings Control.xaml.cs</Name>
+      <CRC>-1346613620</CRC>
+    </File_Data>
+  </FolderData>
+  <RefProjData>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Controls\Add Window\Add Window Module.csproj</Name>
+      <Version>1.0.5866.754</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\Authentication Objects\Authentication Objects.csproj</Name>
+      <Version>1.0.5866.528</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Authentication Objects\Authentication Objects.csproj</Name>
+      <Version>1.0.5593.447</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\MSSQL\Black Box Web Service Client\Black Box Web Service Client.csproj</Name>
+      <Version>1.0.5581.72</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\CAN Objects\CAN Objects.csproj</Name>
+      <Version>1.0.5593.320</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\CAN Objects\CAN Objects.csproj</Name>
+      <Version>1.0.5866.364</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\CAN2 Commands\CAN2 Commands.csproj</Name>
+      <Version>1.0.5594.1720</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\CAN2 Commands\CAN2 Commands.csproj</Name>
+      <Version>1.0.5866.1779</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\CAN2 Messages\CAN2 Messages.csproj</Name>
+      <Version>1.0.5593.627</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\CAN2 Systec\CAN2 Systec.csproj</Name>
+      <Version>1.0.5593.502</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\CAN2\CAN2.csproj</Name>
+      <Version>1.0.5866.854</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\CAN2\CAN2.csproj</Name>
+      <Version>1.0.5593.818</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\COFF\COFF.csproj</Name>
+      <Version>1.0.5594.640</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Common\Common.csproj</Name>
+      <Version>1.0.5588.2313</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\Common\Common.csproj</Name>
+      <Version>1.0.5866.2329</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Database Objects\Database Objects.csproj</Name>
+      <Version>1.0.5585.1580</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\Database Objects\Database Objects.csproj</Name>
+      <Version>1.0.5866.1625</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\DatabaseHelper\Database Objects.csproj</Name>
+      <Version>1.0.5580.1579</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\..\..\Projects\Libraries\Object Libraries\Database Objects\Database Objects.csproj</Name>
+      <Version>1.0.5594.1645</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\DatabaseHelper\DatabaseHelper.csproj</Name>
+      <Version>1.0.5579.1577</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\Exception Helper\Exception Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Exception Helper\Exception Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Header Bar\Header Bar Module.csproj</Name>
+      <Version>1.0.5625.194</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\Image Helper\Image Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Image Helper\Image Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Controls\JTags\JTags Module.csproj</Name>
+      <Version>1.0.5866.640</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Tool Bars\List Box Tool Bar\List Box Tool Bar.csproj</Name>
+      <Version>1.0.3185.926</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Logger Helper\Logger Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\Logger Helper\Logger Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\Login Objects\Login Objects.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\Manufacturing Objects\Manufacturing Objects.csproj</Name>
+      <Version>1.0.5866.259</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Manufacturing Objects\Manufacturing Objects.csproj</Name>
+      <Version>1.0.5593.215</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\MSSQL\Manufacturing Tables Web Service Client\Manufacturing Tables Web Service Client.csproj</Name>
+      <Version>1.0.5581.824</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Manufacturing Web Service Client REST\Manufacturing Web Service Client REST.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\MSSQL\Manufacturing Web Service Client\Manufacturing Web Service Client.csproj</Name>
+      <Version>1.0.5581.244</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Tool Bars\Multi-Level Tool Bar\Multi-Level Tool Bar.csproj</Name>
+      <Version>1.0.5866.269</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\NHibernateBase\NHibernateBase.csproj</Name>
+      <Version>1.0.5625.198</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\NHibernateBase\NHibernateBase.csproj</Name>
+      <Version>1.0.5588.196</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\PDF Helper\PDF Helper.csproj</Name>
+      <Version>1.0.5866.3382</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\..\..\Projects\Libraries\Helper Libraries\PDF Helper\PDF Helper.csproj</Name>
+      <Version>1.0.5597.4306</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\PDF Objects\PDF Objects.csproj</Name>
+      <Version>1.0.5866.393</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\..\..\Projects\Libraries\Object Libraries\PDF Objects\PDF Objects.csproj</Name>
+      <Version>1.0.5597.371</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\PDF\PDF.csproj</Name>
+      <Version>1.0.5585.3350</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\3rd Party Libraries\PDFsharp\PDFsharp\code\PdfSharp\PdfSharp.csproj</Name>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Controls\Progression Log Viewer\Progression Log Viewer.csproj</Name>
+      <Version>1.0.5866.295</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\MSSQL\SART 2012 Web Service Client\SART 2012 Web Service Client.csproj</Name>
+      <Version>1.0.5580.748</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\SART Infrastructure\SART Infrastructure.csproj</Name>
+      <Version>1.0.5866.1819</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\SART Objects\SART Objects.csproj</Name>
+      <Version>1.0.5866.1840</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\SART Objects\SART Objects.csproj</Name>
+      <Version>1.0.5594.1773</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\REST Services\SART\SART Web Service Client REST\SART Web Service Client REST.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Login Modules\Segway Login Module\Segway Login Module.csproj</Name>
+      <Version>1.0.5630.1823</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\Segway Objects\Segway Objects.csproj</Name>
+      <Version>1.0.5866.4284</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Segway Objects\Segway Objects.csproj</Name>
+      <Version>1.0.5593.4236</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\ShellControls\Segway ShellControls Module.csproj</Name>
+      <Version>1.0.5866.1219</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Status Bars\Standard Status Bar\Standard Status Bar.csproj</Name>
+      <Version>1.0.5866.1161</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\MSSQL\Syteline External Web Service Client\Syteline External Web Service Client.csproj</Name>
+      <Version>1.0.5581.1769</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\Syteline Objects\Syteline Objects.csproj</Name>
+      <Version>1.0.5866.1642</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Syteline Objects\Syteline Objects.csproj</Name>
+      <Version>1.0.5593.1563</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\REST Services\Syteline\Syteline Web Service Client REST\Syteline Web Service Client REST.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Controls\Under Construction\Under Construction.csproj</Name>
+      <Version>1.0.3438.99</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\Work Order Module\Work Order Module.csproj</Name>
+      <Version>1.0.5866.4381</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\WPFResources\WPFResources.csproj</Name>
+      <Version>1.0.5625.372</Version>
+    </Reference_Project_Data>
+  </RefProjData>
+  <Changed>true</Changed>
+</Folder_Data>

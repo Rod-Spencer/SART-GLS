@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Folder_Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FolderData>
+    <File_Data>
+      <Name>Data Models\Email Data.cs</Name>
+      <CRC>0</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Email Segway Module.cs</Name>
+      <CRC>-1977568762</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\Email Segway.png</Name>
+      <CRC>-288136729</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>packages.config</Name>
+      <CRC>389312779</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\Email Segway ViewModel Interface.cs</Name>
+      <CRC>996636468</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\Email Segway ViewModel.cs</Name>
+      <CRC>-2048485584</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\EmailSegway Control Interface.cs</Name>
+      <CRC>-149367043</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\EmailSegway Control.xaml</Name>
+      <CRC>-1163953681</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\EmailSegway Control.xaml.cs</Name>
+      <CRC>1869960145</CRC>
+    </File_Data>
+  </FolderData>
+  <RefProjData>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Authentication Objects\Authentication Objects.csproj</Name>
+      <Version>1.0.5582.420</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Common\Common.csproj</Name>
+      <Version>1.0.5580.2309</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\Common\Common.csproj</Name>
+      <Version>1.0.2725.2152</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Exception Helper\Exception Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Image Helper\Image Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Tool Bars\List Box Tool Bar\List Box Tool Bar.csproj</Name>
+      <Version>1.0.3185.926</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Logger Helper\Logger Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Tool Bars\Multi-Level Tool Bar\Multi-Level Tool Bar.csproj</Name>
+      <Version>1.0.5581.243</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\NHibernateBase\NHibernateBase.csproj</Name>
+      <Version>1.0.5580.191</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\MSSQL\SART 2012 Web Service Client\SART 2012 Web Service Client.csproj</Name>
+      <Version>1.0.5580.748</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\SART Infrastructure\SART Infrastructure.csproj</Name>
+      <Version>1.0.5585.1668</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\SART Objects\SART Objects.csproj</Name>
+      <Version>1.0.5585.1737</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\SART Objects\SART Objects.csproj</Name>
+      <Version>1.0.2725.1277</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Login Modules\Segway Login Module\Segway Login Module.csproj</Name>
+      <Version>1.0.5582.1741</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\Segway Objects\Segway Objects.csproj</Name>
+      <Version>1.0.2725.3885</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Segway Objects\Segway Objects.csproj</Name>
+      <Version>1.0.5581.4223</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\ShellControls\Segway ShellControls Module.csproj</Name>
+      <Version>1.0.5580.1199</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\WPFResources\WPFResources.csproj</Name>
+      <Version>1.0.5579.370</Version>
+    </Reference_Project_Data>
+  </RefProjData>
+  <Changed>true</Changed>
+</Folder_Data>

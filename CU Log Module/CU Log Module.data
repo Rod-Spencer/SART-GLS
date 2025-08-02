@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Folder_Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FolderData>
+    <File_Data>
+      <Name>app.config</Name>
+      <CRC>-1506224284</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>CU Log Module.cs</Name>
+      <CRC>-1200071406</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Events\CU Log Events.cs</Name>
+      <CRC>-502778859</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Events\CULogEvents.cs</Name>
+      <CRC>0</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\eventlogs.png</Name>
+      <CRC>1760345654</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\new.png</Name>
+      <CRC>268758734</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\NoteIcon.png</Name>
+      <CRC>-1242759158</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\open.png</Name>
+      <CRC>-1169462820</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\warning.png</Name>
+      <CRC>-1573501415</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>packages.config</Name>
+      <CRC>177334841</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Properties\Resources.Designer.cs</Name>
+      <CRC>-1740944851</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Properties\Resources.resx</Name>
+      <CRC>938936645</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Properties\Settings.Designer.cs</Name>
+      <CRC>256682237</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Properties\Settings.settings</Name>
+      <CRC>25279893</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\Common.cs</Name>
+      <CRC>-133842323</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\CU Log Reporter.cs</Name>
+      <CRC>-631495582</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\CULogEvents.cs</Name>
+      <CRC>0</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\Enumerations.cs</Name>
+      <CRC>-1888431170</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\Fault Extract.cs</Name>
+      <CRC>1178864788</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\G2 Actuator Faults Local.cs</Name>
+      <CRC>-497134500</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\G2 Actuator Faults Remote.cs</Name>
+      <CRC>-1791873138</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\G2 Alternate Actuator Faults.cs</Name>
+      <CRC>1018335012</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\G2 Comm Faults Local.cs</Name>
+      <CRC>0</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\G2 Comm Faults Remote.cs</Name>
+      <CRC>0</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\G2 Comm Faults.cs</Name>
+      <CRC>620431253</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\G2 Fault Base.cs</Name>
+      <CRC>-10034431</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\G2 Fault Definition Extended.cs</Name>
+      <CRC>837712887</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\G2 Fault Definition.cs</Name>
+      <CRC>332342184</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\G2 General Purpose Test.cs</Name>
+      <CRC>181368299</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\G2 General Purpose Words.cs</Name>
+      <CRC>-1931662789</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\G2 Hazard Faults Local.cs</Name>
+      <CRC>0</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\G2 Hazard Faults Remote.cs</Name>
+      <CRC>0</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\G2 Hazard Faults.cs</Name>
+      <CRC>-1182490183</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\G2 Sensor Faults Local.cs</Name>
+      <CRC>-1036334043</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\G2 Sensor Faults Remote.cs</Name>
+      <CRC>1339861718</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\G2 Sensor Faults.cs</Name>
+      <CRC>0</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\G2Log Base.cs</Name>
+      <CRC>683264211</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\G2Log Fault.cs</Name>
+      <CRC>2079191786</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\G2Log Helper.cs</Name>
+      <CRC>-748400694</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\G2Log Link.cs</Name>
+      <CRC>1091512864</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\List Box Item Definition.cs</Name>
+      <CRC>-1921485477</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\Log Clear.cs</Name>
+      <CRC>475553183</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\Log Extract.cs</Name>
+      <CRC>185009860</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\Log Format.cs</Name>
+      <CRC>1536143481</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\CU Log Extraction View Model Interface.cs</Name>
+      <CRC>-1379784348</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\CU Log Extraction View Model.cs</Name>
+      <CRC>91481425</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\CU Log Open ViewModel Interface.cs</Name>
+      <CRC>-2068758569</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\CU Log Open ViewModel.cs</Name>
+      <CRC>691107603</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\CU Log Viewer View Model Interface.cs</Name>
+      <CRC>-130837046</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\CU Log Viewer View Model.cs</Name>
+      <CRC>-14859165</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\CU Log ViewModel Interface.cs</Name>
+      <CRC>-221380431</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\CU Log ViewModel.cs</Name>
+      <CRC>-1415724065</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\CU Log Control Interface.cs</Name>
+      <CRC>2056486012</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\CU Log Control.xaml</Name>
+      <CRC>-807516598</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\CU Log Control.xaml.cs</Name>
+      <CRC>174047119</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\CU Log Extraction Interface.cs</Name>
+      <CRC>-2052882044</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\CU Log Extraction.xaml</Name>
+      <CRC>-892636106</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\CU Log Extraction.xaml.cs</Name>
+      <CRC>191706593</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\CU Log Open Control Interface.cs</Name>
+      <CRC>1079187510</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\CU Log Open Control.xaml</Name>
+      <CRC>875485601</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\CU Log Open Control.xaml.cs</Name>
+      <CRC>1965591834</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\CU Log Open Settings Control.xaml</Name>
+      <CRC>-1562687135</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\CU Log Open Settings Control.xaml.cs</Name>
+      <CRC>-429155519</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\CU Log Viewer Interface.cs</Name>
+      <CRC>-1390797490</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\CU Log Viewer.xaml</Name>
+      <CRC>1620671051</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\CU Log Viewer.xaml.cs</Name>
+      <CRC>580564232</CRC>
+    </File_Data>
+  </FolderData>
+  <RefProjData>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Controls\Add Window\Add Window Module.csproj</Name>
+      <Version>1.0.5866.754</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\Authentication Objects\Authentication Objects.csproj</Name>
+      <Version>1.0.5866.528</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Authentication Objects\Authentication Objects.csproj</Name>
+      <Version>1.0.5594.448</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\CAN Objects\CAN Objects.csproj</Name>
+      <Version>1.0.5866.364</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\CAN Objects\CAN Objects.csproj</Name>
+      <Version>1.0.5593.320</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\CAN Objects\CAN Objects.csproj</Name>
+      <Version>1.0.2633.3</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\CAN Systec\CAN Systec.csproj</Name>
+      <Version>1.0.1655.34</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\CAN2 Commands\CAN2 Commands.csproj</Name>
+      <Version>1.0.2726.1140</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\CAN2 Commands\CAN2 Commands.csproj</Name>
+      <Version>1.0.5866.1779</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\CAN2 Commands\CAN2 Commands.csproj</Name>
+      <Version>1.0.5594.1720</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\CAN2 Systec\CAN2 Systec.csproj</Name>
+      <Version>1.0.2362.247</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\CAN Systec\CAN2 Systec.csproj</Name>
+      <Version>1.0.1655.42</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\CAN2\CAN2.csproj</Name>
+      <Version>1.0.5866.854</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\CAN2\CAN2.csproj</Name>
+      <Version>1.0.2725.576</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\CAN2\CAN2.csproj</Name>
+      <Version>1.0.5593.818</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Common\Common.csproj</Name>
+      <Version>1.0.5588.2313</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\Common\Common.csproj</Name>
+      <Version>1.0.2725.2152</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\Common\Common.csproj</Name>
+      <Version>1.0.5866.2329</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Database Objects\Database Objects.csproj</Name>
+      <Version>1.0.5585.1580</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\DatabaseHelper\Database Objects.csproj</Name>
+      <Version>1.0.5580.1579</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\..\..\Projects\Libraries\Object Libraries\Database Objects\Database Objects.csproj</Name>
+      <Version>1.0.5594.1645</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\Database Objects\Database Objects.csproj</Name>
+      <Version>1.0.5866.1625</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\DatabaseHelper\DatabaseHelper.csproj</Name>
+      <Version>1.0.5579.1577</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\DatabaseHelper\DatabaseHelper.csproj</Name>
+      <Version>1.0.2717.1476</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Exception Helper\Exception Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\Exception Helper\Exception Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Header Bar\Header Bar Module.csproj</Name>
+      <Version>1.0.5625.194</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\Heart Beat Web Service Client\Heart Beat Web Service Client.csproj</Name>
+      <Version>1.0.2211.20</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\Image Helper\Image Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Image Helper\Image Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Tool Bars\List Box Tool Bar\List Box Tool Bar.csproj</Name>
+      <Version>1.0.3185.926</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\Logger Helper\Logger Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Logger Helper\Logger Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\Login Objects\Login Objects.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Tool Bars\Multi-Level Tool Bar\Multi-Level Tool Bar.csproj</Name>
+      <Version>1.0.5866.269</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\NHibernateBase\NHibernateBase.csproj</Name>
+      <Version>1.0.5625.198</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\NHibernateBase\NHibernateBase.csproj</Name>
+      <Version>1.0.5588.196</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\..\..\Projects\Libraries\Helper Libraries\PDF Helper\PDF Helper.csproj</Name>
+      <Version>1.0.5597.4306</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\PDF Helper\PDF Helper.csproj</Name>
+      <Version>1.0.5866.3382</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\PDF Objects\PDF Objects.csproj</Name>
+      <Version>1.0.5866.393</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\..\..\Projects\Libraries\Object Libraries\PDF Objects\PDF Objects.csproj</Name>
+      <Version>1.0.5597.371</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\PDF\PDF.csproj</Name>
+      <Version>1.0.2726.2971</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\PDF\PDF.csproj</Name>
+      <Version>1.0.5585.3350</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\3rd Party Libraries\PDFsharp\PDFsharp\code\PdfSharp\PdfSharp.csproj</Name>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Controls\Progression Log Viewer\Progression Log Viewer.csproj</Name>
+      <Version>1.0.5866.295</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\SART 2012 Web Service Client\SART 2012 Web Service Client.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\MSSQL\SART 2012 Web Service Client\SART 2012 Web Service Client.csproj</Name>
+      <Version>1.0.5580.748</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\SART Infrastructure\SART Infrastructure.csproj</Name>
+      <Version>1.0.5866.1819</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\SART Objects\SART Objects.csproj</Name>
+      <Version>1.0.2725.1277</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\SART Objects\SART Objects.csproj</Name>
+      <Version>1.0.5594.1773</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\SART Objects\SART Objects.csproj</Name>
+      <Version>1.0.5866.1840</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\REST Services\SART\SART Web Service Client REST\SART Web Service Client REST.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Login Modules\Segway Login Module\Segway Login Module.csproj</Name>
+      <Version>1.0.5630.1823</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Segway Login Module\Segway Login Module.csproj</Name>
+      <Version>1.0.1756.550</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\Segway Objects\Segway Objects.csproj</Name>
+      <Version>1.0.2725.3885</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\Segway Objects\Segway Objects.csproj</Name>
+      <Version>1.0.5866.4284</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Segway Objects\Segway Objects.csproj</Name>
+      <Version>1.0.5593.4236</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\ShellControls\Segway ShellControls Module.csproj</Name>
+      <Version>1.0.5866.1219</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\MSSQL\Service Logs Web Service Client\Service Logs Web Service Client.csproj</Name>
+      <Version>1.0.2199.13</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Status Bars\Standard Status Bar\Standard Status Bar.csproj</Name>
+      <Version>1.0.5866.1161</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\Work Order Module\Work Order Module.csproj</Name>
+      <Version>1.0.5866.4381</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\WPFResources\WPFResources.csproj</Name>
+      <Version>1.0.5625.372</Version>
+    </Reference_Project_Data>
+  </RefProjData>
+  <Changed>true</Changed>
+</Folder_Data>

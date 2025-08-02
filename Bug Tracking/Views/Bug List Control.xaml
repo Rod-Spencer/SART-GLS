@@ -1,0 +1,129 @@
+<UserControl x:Class="Segway.Service.Bugs.Bug_List_Control"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:wpfres="clr-namespace:Segway.WPFResources;assembly=WPFResources"
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="1000">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="10" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="10" />
+        </Grid.RowDefinitions>
+
+        <Popup Grid.Row="2" Grid.RowSpan="1" Grid.Column="1" Grid.ColumnSpan="1" Width="Auto" Height="Auto" AllowsTransparency="True"
+               IsOpen="{Binding Path=PopupOpen, Mode=TwoWay}" StaysOpen="False" Placement="Center">
+            <Border Width="1200" Height="Auto" Background="{Binding Path=PopupColor, Mode=TwoWay}" BorderBrush="Black" BorderThickness="2" >
+                <TextBlock Text="{Binding Path=PopupMessage, Mode=TwoWay}" FontSize="16" Margin="40,25" HorizontalAlignment="Center"  />
+            </Border>
+        </Popup>
+
+        <ListView Grid.Row="2" Grid.Column="1" Name="lvBugList" ScrollViewer.CanContentScroll="True" BorderThickness="1" FontFamily="Tahoma"
+                  ItemContainerStyle="{DynamicResource {ComponentResourceKey ResourceId=ListViewItemStyleBugs, TypeInTargetAssembly={x:Type wpfres:ListViews}}}"
+                  ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                  Style="{DynamicResource {ComponentResourceKey ResourceId=ListViewStyleOne, TypeInTargetAssembly={x:Type wpfres:ListViews}}}"
+                  BorderBrush="{DynamicResource {ComponentResourceKey ResourceId=ControlBorderBrush, TypeInTargetAssembly={x:Type wpfres:Brushes}}}"   
+                  ItemsSource="{Binding Path=Bug_List, Mode=TwoWay}" 
+                  SelectedItem="{Binding Path=Selected_Bug, Mode=TwoWay}"
+                  wpfres:GridViewSort.AutoSort="True"   wpfres:GridViewSort.ShowSortGlyph="True"
+                  >
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseDoubleClick">
+                    <i:InvokeCommandAction Command="{Binding OpenCommand}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+            <ListView.View>
+                <GridView AllowsColumnReorder="True" ColumnHeaderContainerStyle="{DynamicResource {ComponentResourceKey ResourceId=GridViewColumnHeaderStyleOne, TypeInTargetAssembly={x:Type wpfres:ListViews}}}">
+                    <GridViewColumn Header="Bug ID" DisplayMemberBinding="{Binding ID}" wpfres:GridViewSort.PropertyName="ID"/>
+                    <GridViewColumn Header="Application" DisplayMemberBinding="{Binding Application}" wpfres:GridViewSort.PropertyName="Application"/>
+                    <GridViewColumn Header="Component" DisplayMemberBinding="{Binding Component}" wpfres:GridViewSort.PropertyName="Component"/>
+                    <GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}" wpfres:GridViewSort.PropertyName="Description"/>
+                    <GridViewColumn Header="Priority" wpfres:GridViewSort.PropertyName="Priority">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock x:Name="txtPr" Text="{Binding Path=Priority}" />
+                                <DataTemplate.Triggers>
+                                    <DataTrigger Binding="{Binding Path=Priority}" Value="P1">
+                                        <Setter TargetName="txtPr" Property="Foreground" Value="Red"/>
+                                        <Setter TargetName="txtPr" Property="HorizontalAlignment" Value="Center"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding Path=Priority}" Value="P2">
+                                        <Setter TargetName="txtPr" Property="Foreground" Value="Blue"/>
+                                        <Setter TargetName="txtPr" Property="HorizontalAlignment" Value="Center"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding Path=Priority}" Value="P3">
+                                        <Setter TargetName="txtPr" Property="Foreground" Value="Purple"/>
+                                        <Setter TargetName="txtPr" Property="HorizontalAlignment" Value="Center"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding Path=Priority}" Value="P4">
+                                        <Setter TargetName="txtPr" Property="HorizontalAlignment" Value="Center"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding Path=Priority}" Value="P5">
+                                        <Setter TargetName="txtPr" Property="HorizontalAlignment" Value="Center"/>
+                                    </DataTrigger>
+                                </DataTemplate.Triggers>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Status}" wpfres:GridViewSort.PropertyName="Status" Width="Auto"/>
+                    <GridViewColumn Header="Entered" DisplayMemberBinding="{Binding Entered}" wpfres:GridViewSort.PropertyName="Entered"/>
+                    <GridViewColumn Header="Reported By" DisplayMemberBinding="{Binding Reported_By}" wpfres:GridViewSort.PropertyName="Reported_By"/>
+                    <GridViewColumn Header="Resolution" DisplayMemberBinding="{Binding Resolution}" wpfres:GridViewSort.PropertyName="Resolution"/>
+                    <GridViewColumn Header="Implemented" DisplayMemberBinding="{Binding Implemented_Version}" wpfres:GridViewSort.PropertyName="Implemented_Version"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+
+        <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center">
+            <TextBlock Text="Count: " FontFamily="Tahoma" FontSize="14" Opacity="0.65">
+                <TextBlock.Effect>
+                    <DropShadowEffect BlurRadius="4" Opacity="0.5"/>
+                </TextBlock.Effect>
+            </TextBlock>
+            <TextBlock Text="{Binding Path=Bug_Count, Mode=TwoWay}" FontFamily="Tahoma" FontSize="14" Opacity="0.65">
+                <TextBlock.Effect>
+                    <DropShadowEffect BlurRadius="4" Opacity="0.5"/>
+                </TextBlock.Effect>
+            </TextBlock>
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="3" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Horizontal">
+            <Button Width="120" Height="30" Content="Refresh" Margin="0,5,50,5" IsDefault="False"  Command="{Binding RefreshCommand}" 
+                Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"
+                >
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="4" Opacity="0.5"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Width="120" Height="30" Content="New" Margin="30,5,20,5" IsDefault="False"  Command="{Binding NewCommand}" 
+                Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"
+                >
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="4" Opacity="0.5"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Width="120" Height="30" Content="Open" Margin="20,5,5,5" IsDefault="False"  Command="{Binding OpenCommand}" 
+                Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"
+                >
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="4" Opacity="0.5"/>
+                </Button.Effect>
+            </Button>
+
+        </StackPanel>
+    </Grid>
+</UserControl>

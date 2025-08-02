@@ -1,0 +1,31 @@
+<UserControl x:Class="Segway.Modules.Administration.Parts_Management_Control"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="10" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="10" />
+        </Grid.RowDefinitions>
+
+        <Popup Grid.Row="1" Grid.RowSpan="1" Grid.Column="1" Grid.ColumnSpan="1" Width="Auto" Height="Auto"
+               IsOpen="{ Binding Path = PopupOpen, Mode = TwoWay}" StaysOpen="False" Placement="Center">
+            <Border Width="800" Height="Auto" Background="{Binding Path=PopupColor, Mode=TwoWay}" BorderBrush="Black" BorderThickness="2" CornerRadius="10" >
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <TextBlock Text="{ Binding Path=PopupMessage, Mode=TwoWay}" FontSize="16" Margin="40,25" HorizontalAlignment="Center" />
+                </ScrollViewer>
+            </Border>
+        </Popup>
+
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="This is the view for: Parts_Management_Control" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" TextWrapping="Wrap" />
+    </Grid>
+</UserControl>

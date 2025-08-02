@@ -1,0 +1,43 @@
+﻿<Window x:Class="Segway.SART2012.Shell"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://www.codeplex.com/CompositeWPF"
+        xmlns:inf="clr-namespace:Segway.Modules.ShellControls;assembly=SegwayShellControls"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:shared="http://schemas.actiprosoftware.com/winfx/xaml/shared"
+        xmlns:views="http://schemas.actiprosoftware.com/winfx/xaml/views"
+        xmlns:local="clr-namespace:Segway.SART2012"
+        xmlns:wpfres="clr-namespace:Segway.WPFResources;assembly=WPFResources"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+        Title="SART 2012" Width="1500" Height="850"
+        WindowStyle="None" AllowsTransparency="True" Activated="mainWindow_Activated" Deactivated="mainWindow_Deactivated"
+        ResizeMode="CanResizeWithGrip" 
+        WindowStartupLocation="CenterScreen"
+        Margin="5,0,5,0"
+        x:Name="mainWindow" Loaded="OnShellLoaded"
+        DataContext="{Binding ElementName=mainWindow}"
+        Focusable="True" Background="Transparent"
+        MinWidth="925" MinHeight="650"
+        KeyDown="WindowBase_KeyDown"
+        KeyUp="WindowBase_KeyUp" Closing="OnClosing"
+        >
+
+
+    <Border CornerRadius="5,5,5,5" Background="{DynamicResource {ComponentResourceKey ResourceId=LightBackgroundBrush, TypeInTargetAssembly={x:Type wpfres:Brushes}}}" BorderBrush="Black" BorderThickness="0.5">
+        <Grid x:Name="gridMain" Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+
+            <ContentControl Grid.Row="0" Grid.Column="0" prism:RegionManager.RegionName="{x:Static inf:RegionNames.TitleBarRegion}" />
+            <ContentControl Grid.Row="1" Grid.Column="0" prism:RegionManager.RegionName="{x:Static inf:RegionNames.MenuBarRegion}" />
+            <ContentControl Grid.Row="2" Grid.Column="0" prism:RegionManager.RegionName="{x:Static inf:RegionNames.ToolBarRegion}" />
+            <ContentControl Grid.Row="3" Grid.Column="0" prism:RegionManager.RegionName="{x:Static inf:RegionNames.MainRegion}" />
+            <ContentControl Grid.Row="4" Grid.Column="0" prism:RegionManager.RegionName="{x:Static inf:RegionNames.StatusBarRegion}" />
+        </Grid>
+    </Border>
+</Window>

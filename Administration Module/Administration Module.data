@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Folder_Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FolderData>
+    <File_Data>
+      <Name>Administration Module.cs</Name>
+      <CRC>1543503234</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\Part Type Cross Reference.cs</Name>
+      <CRC>1925964090</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\Regions.cs</Name>
+      <CRC>1288319028</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Events\Admin Events.cs</Name>
+      <CRC>-1994716759</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Events\Admin Selected Settings Name Event.cs</Name>
+      <CRC>-1984780483</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\Administrator.png</Name>
+      <CRC>-1717992913</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\Return.png</Name>
+      <CRC>-978181384</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\Settings.png</Name>
+      <CRC>1668011962</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Images\User.png</Name>
+      <CRC>1521131075</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\Negate Converter.cs</Name>
+      <CRC>362206041</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\Regional Settings.cs</Name>
+      <CRC>0</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\Main ViewModel Interface.cs</Name>
+      <CRC>-498621273</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\Main ViewModel.cs</Name>
+      <CRC>-1393457030</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\Override Management ViewModel Interface.cs</Name>
+      <CRC>-1102987072</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\Override Management ViewModel.cs</Name>
+      <CRC>1518348851</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\Override ViewModel Interface.cs</Name>
+      <CRC>1702544892</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\Override ViewModel.cs</Name>
+      <CRC>-1593962306</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\Parts Management ViewModel Interface.cs</Name>
+      <CRC>-1886189782</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\Parts Management ViewModel.cs</Name>
+      <CRC>-1013313083</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\Parts ViewModel Interface.cs</Name>
+      <CRC>-1686494653</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\Parts ViewModel.cs</Name>
+      <CRC>468980299</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\Return ViewModel Interface.cs</Name>
+      <CRC>1218758457</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\Return ViewModel.cs</Name>
+      <CRC>-1656808412</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\Settings ViewModel Interface.cs</Name>
+      <CRC>1448633681</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\Settings ViewModel.cs</Name>
+      <CRC>1515024664</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\User Management ViewModel Interface.cs</Name>
+      <CRC>-396517968</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\User Management ViewModel.cs</Name>
+      <CRC>1643874756</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\Users ViewModel Interface.cs</Name>
+      <CRC>-1080597919</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>View Models\Users ViewModel.cs</Name>
+      <CRC>-949324805</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Main Control Interface.cs</Name>
+      <CRC>-681709425</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Main Control.xaml</Name>
+      <CRC>-1009620165</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Main Control.xaml.cs</Name>
+      <CRC>1874985032</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Override Control Interface.cs</Name>
+      <CRC>1086995481</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Override Control.xaml</Name>
+      <CRC>-128671012</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Override Control.xaml.cs</Name>
+      <CRC>1814563826</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Override Management Control Interface.cs</Name>
+      <CRC>-1212339061</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Override Management Control.xaml</Name>
+      <CRC>-439855721</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Override Management Control.xaml.cs</Name>
+      <CRC>2065325352</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Parts Control Interface.cs</Name>
+      <CRC>59004109</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Parts Control.xaml</Name>
+      <CRC>1836479153</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Parts Control.xaml.cs</Name>
+      <CRC>1224511573</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Parts Management Control Interface.cs</Name>
+      <CRC>1075630469</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Parts Management Control.xaml</Name>
+      <CRC>-365495228</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Parts Management Control.xaml.cs</Name>
+      <CRC>1756151699</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Return Control Interface.cs</Name>
+      <CRC>-444717305</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Return Control.xaml</Name>
+      <CRC>546790493</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Return Control.xaml.cs</Name>
+      <CRC>965506766</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Settings Control Interface.cs</Name>
+      <CRC>-1994406402</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Settings Control.xaml</Name>
+      <CRC>-1077050928</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Settings Control.xaml.cs</Name>
+      <CRC>2014740756</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\User Management Control Interface.cs</Name>
+      <CRC>-1786035330</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\User Management Control.xaml</Name>
+      <CRC>-1526532391</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\User Management Control.xaml.cs</Name>
+      <CRC>-896327772</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Users Control Interface.cs</Name>
+      <CRC>1584074158</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Users Control.xaml</Name>
+      <CRC>1721725977</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Views\Users Control.xaml.cs</Name>
+      <CRC>-390668315</CRC>
+    </File_Data>
+  </FolderData>
+  <RefProjData>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Controls\Add Window\Add Window Module.csproj</Name>
+      <Version>1.0.3398.704</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Authentication Objects\Authentication Objects.csproj</Name>
+      <Version>1.0.3402.368</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Common\Common.csproj</Name>
+      <Version>1.0.3398.2288</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\Common\Common.csproj</Name>
+      <Version>1.0.2725.2152</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\DatabaseHelper\DatabaseHelper.csproj</Name>
+      <Version>1.0.2717.1476</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\DatabaseHelper\DatabaseHelper.csproj</Name>
+      <Version>1.0.3332.1575</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Controls\DateTime Picker\DateTime Picker\DateTime Picker.csproj</Name>
+      <Version>1.0.3089.76</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Image Helper\Image Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Tool Bars\List Box Tool Bar\List Box Tool Bar.csproj</Name>
+      <Version>1.0.3185.926</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\MSSQL\Mssql Segway Login Web Service Client\MSSQL Segway Login Web Service Client.csproj</Name>
+      <Version>1.0.2199.13</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Tool Bars\Multi-Level Tool Bar\Multi-Level Tool Bar.csproj</Name>
+      <Version>1.0.3398.205</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\NHibernateBase\NHibernateBase.csproj</Name>
+      <Version>1.0.3398.169</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\SART 2012 Web Service Client\SART 2012 Web Service Client.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\MSSQL\SART 2012 Web Service Client\SART 2012 Web Service Client.csproj</Name>
+      <Version>1.0.3402.680</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\SART Infrastructure\SART Infrastructure.csproj</Name>
+      <Version>1.0.3403.1574</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\SART Objects\SART Objects.csproj</Name>
+      <Version>1.0.3402.1675</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\SART Objects\SART Objects.csproj</Name>
+      <Version>1.0.2725.1277</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Segway Login Module\Segway Login Module.csproj</Name>
+      <Version>1.0.1756.550</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Login Modules\Segway Login Module\Segway Login Module.csproj</Name>
+      <Version>1.0.3402.1647</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\Segway Login Web Service Client\Segway Login Web Service Client.csproj</Name>
+      <Version>1.0.1597.27</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\Oracle\Segway Login Web Service Client\Segway Login Web Service Client.csproj</Name>
+      <Version>1.0.1631.48</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Segway Objects\Segway Objects.csproj</Name>
+      <Version>1.0.3402.4187</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\Segway Objects\Segway Objects.csproj</Name>
+      <Version>1.0.2725.3885</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\ShellControls\Segway ShellControls Module.csproj</Name>
+      <Version>1.0.3398.1170</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\Status Bars\Standard Status Bar\Standard Status Bar.csproj</Name>
+      <Version>1.0.3398.1112</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\MSSQL\SyteLine External Web Service Client\Syteline External Web Service Client.csproj</Name>
+      <Version>1.0.2598.1247</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Syteline Objects\Syteline Objects.csproj</Name>
+      <Version>1.0.3402.1474</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\Syteline Objects\Syteline Objects.csproj</Name>
+      <Version>1.0.2725.1137</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Modules\WPFResources\WPFResources.csproj</Name>
+      <Version>1.0.3394.360</Version>
+    </Reference_Project_Data>
+  </RefProjData>
+  <Changed>true</Changed>
+</Folder_Data>

@@ -1,0 +1,238 @@
+<UserControl x:Class="Segway.Modules.Administration.Users_Control"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:act="http://schemas.actiprosoftware.com/winfx/xaml/propgrid"
+             xmlns:wpfres="clr-namespace:Segway.WPFResources;assembly=WPFResources"
+             xmlns:dtpick="clr-namespace:Segway.Modules.Control;assembly=DateTimePicker"
+             xmlns:local="clr-namespace:Segway.Modules.Administration"
+             mc:Ignorable="d" 
+             d:DesignHeight="650" d:DesignWidth="1200"
+             >
+
+    <Control.Resources>
+        <local:Negate_Converter x:Key="Negate" />
+    </Control.Resources>
+
+
+
+    <Border Grid.Row="1" BorderBrush="Black" BorderThickness="1" Margin="5" >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="125" />
+            </Grid.RowDefinitions>
+
+            <Popup Grid.Row="1" Width="Auto" Height="Auto" IsOpen="{Binding Path=PopupOpen, Mode=TwoWay}" StaysOpen="False" Placement="Center">
+                <Border Width="1400" Height="Auto" Background="{Binding Path=PopupColor, Mode=TwoWay}" BorderBrush="Black" BorderThickness="2" CornerRadius="5" >
+                    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                        <TextBlock Text="{Binding Path=PopupMessage, Mode=TwoWay}" FontSize="16" Margin="40,25" HorizontalAlignment="Center" />
+                    </ScrollViewer>
+                </Border>
+            </Popup>
+
+
+            <Border Grid.Row="0" BorderBrush="Black" BorderThickness="1,1,1,.5" />
+            <Border Grid.Row="1" BorderBrush="Black" BorderThickness="1,.5" />
+            <Border Grid.Row="2" BorderBrush="Black" BorderThickness="1,.5,1,1" />
+
+            <TextBlock Grid.Row="0" Text="Change User Access Level and Settings" 
+                                   Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:TextBlocks}, ResourceId=TextBlockStyleOne}}"
+                                   VerticalAlignment="Center" FontSize="20" FontFamily="Tahoma" HorizontalAlignment="Center" 
+                                   />
+
+
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="100" />
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="1" BorderBrush="Black" BorderThickness="1,0,0,0" />
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="5*" />
+                        <RowDefinition Height="5*" />
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="5" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="5" />
+                            <ColumnDefinition Width="100" />
+                            <ColumnDefinition  />
+                            <ColumnDefinition Width="5" />
+                        </Grid.ColumnDefinitions>
+
+
+                        <Popup PopupAnimation="Scroll" Width="Auto" Height="Auto" Grid.Row="0" Grid.RowSpan="7" Grid.Column="0" Grid.ColumnSpan="4" AllowsTransparency="True" 
+                               Placement="Center" IsOpen="{Binding Path=User_Access_Popup_Open}" StaysOpen="False">
+                            <Border BorderBrush="Black" BorderThickness="1" CornerRadius="3">
+                                <StackPanel Orientation="Vertical" Background="LightGoldenrodYellow">
+                                    <TextBlock Margin="5,5,5,5" Text="{Binding Path=User_Access_Change_Message}" FontFamily="Tahoma" FontSize="15" />
+                                    <TextBlock Margin="5,0,5,5" Text="{Binding Path=User_Access_Change_Message_Line2}" FontFamily="Tahoma" FontSize="15" />
+                                </StackPanel>
+                            </Border>
+                        </Popup>
+
+
+                        <!--<Border Grid.Row="0" Grid.RowSpan="7" Grid.Column="0" Grid.ColumnSpan="4" BorderBrush="Black" BorderThickness="1,0,0,0" />-->
+                        <TextBlock Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Text="Update User Access Level" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="17" FontFamily="Tahoma" 
+                                   Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:TextBlocks}, ResourceId=TextBlockStyleOne}}"
+                                   />
+
+                        <TextBlock Grid.Row="1" Grid.Column="1" Text="User Name" VerticalAlignment="Center" FontSize="15" FontFamily="Tahoma" Margin="0,3"
+                                   Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:TextBlocks}, ResourceId=TextBlockStyleOne}}"
+                                   />
+                        <ComboBox Grid.Row="1" Grid.Column="2" VerticalContentAlignment="Center" FontSize="14" Name="UserListCombo" Margin="0,2"
+                                  ItemsSource="{Binding Path=User_List,Mode=TwoWay}" 
+                                  IsEnabled="{Binding Path=IsMe, Converter={StaticResource Negate}}"
+                                  SelectedItem="{Binding Path=Selected_User, Mode=TwoWay}" 
+                                  Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:ComboBoxes}, ResourceId=ComboBoxStyleOne}}"
+                                  />
+
+                        <TextBlock Grid.Row="2" Grid.Column="1" Text="Access Level" VerticalAlignment="Bottom" FontSize="15" FontFamily="Tahoma" Margin="0,3"
+                                   Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:TextBlocks}, ResourceId=TextBlockStyleOne}}"
+                                   />
+
+                        <ComboBox Grid.Row="2" Grid.Column="2"  VerticalContentAlignment="Center" FontSize="14" Margin="0,2"
+                                  ItemsSource="{Binding Path=Access_Level_List,Mode=TwoWay}" 
+                                  SelectedItem="{Binding Path=Selected_Level, Mode=TwoWay}" 
+                                  IsEnabled="{Binding Path=Is_Access_Enabled, Mode=TwoWay}"
+                                  Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:ComboBoxes}, ResourceId=ComboBoxStyleOne}}"
+                                  />
+
+
+                        <TextBlock Grid.Row="3" Grid.Column="1" Text="Default Level" VerticalAlignment="Bottom" FontSize="15" FontFamily="Tahoma" Margin="0,3"
+                                   Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:TextBlocks}, ResourceId=TextBlockStyleOne}}"
+                                   />
+
+                        <ComboBox Grid.Row="3" Grid.Column="2"  VerticalContentAlignment="Center" FontSize="14" Margin="0,2"
+                                  ItemsSource="{Binding Path=Default_Level_List,Mode=TwoWay}" 
+                                  SelectedItem="{Binding Path=Selected_Default, Mode=TwoWay}" 
+                                  IsEnabled="{Binding Path=Is_Access_Enabled, Mode=TwoWay}"
+                                  Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:ComboBoxes}, ResourceId=ComboBoxStyleOne}}"
+                                  />
+
+
+                        <StackPanel Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Button  Content="Get Users" Command="{Binding GetUserCommand}" Height="30" Width="125" Margin="20,0"
+                                     Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"
+                                     />
+                            <Button  Content="Update" Command="{Binding UpdateUserCommand}" Height="30" Width="125" Margin="20,0"
+                                     Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}" 
+                                     />
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="5" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="5" />
+                            <ColumnDefinition Width="150" />
+                            <ColumnDefinition  />
+                            <ColumnDefinition Width="5" />
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Row="0" Grid.RowSpan="7" Grid.Column="0" Grid.ColumnSpan="4" BorderBrush="Black" BorderThickness="0,1,1,0" />
+
+                        <TextBlock Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Text="JTag Level" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        <TextBlock Grid.Row="1" Grid.Column="1" Text="Work Order" FontSize="18" VerticalAlignment="Center" />
+                        <TextBox Grid.Row="1" Grid.Column="2" Text="{Binding Path=User_Access_Jtag_Work_Order}" FontSize="18" VerticalAlignment="Center" Margin="0,1" />
+
+                        <TextBlock Grid.Row="2" Grid.Column="1" Text="Start DateTime" FontSize="18" VerticalAlignment="Center" />
+                        <dtpick:DateTime_Picker Grid.Row="2" Grid.Column="2" Margin="0,1"  FontSize="18" HorizontalAlignment="Left" 
+                                                Value="{Binding Path=User_Access_JTag_Start_DateTime, Mode=TwoWay}"  />
+                        <TextBlock Grid.Row="3" Grid.Column="1" Text="End DateTime" FontSize="18" VerticalAlignment="Center" />
+                        <dtpick:DateTime_Picker Grid.Row="3" Grid.Column="2" Margin="0,1" FontSize="18" HorizontalAlignment="Left"
+                                                Value="{Binding Path=User_Access_JTag_End_DateTime, Mode=TwoWay}" 
+                                                MinimumDate="{Binding Path=User_Access_JTag_Start_DateTime, Mode=TwoWay}" 
+                                                />
+
+
+                        <Button Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Content="JTag Update" Command="{Binding UpdateJTagCommand}" Height="30" Width="125" 
+                                HorizontalAlignment="Center" VerticalAlignment="Center"
+                                Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}" 
+                                     />
+                    </Grid>
+
+                </Grid>
+
+                <CheckBox Grid.Row="1" Grid.Column="2" Content="Me" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,100"
+                                  IsChecked="{Binding Path=IsMe, Mode=TwoWay}" />
+
+
+                <Grid Grid.Row="1" Grid.Column="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="50" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5" />
+                        <ColumnDefinition  />
+                        <ColumnDefinition Width="5" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Row="0" Grid.Column="1" Text="User Settings" FontSize="17" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <act:PropertyGrid Grid.Row="1" Grid.Column="1" IsSummaryVisible="False"  SelectedObject="{Binding Path=User_Settings, Mode=TwoWay}"  />
+
+                    <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button Content="Create"  Height="30" Width="120" Command="{Binding Path=NewUserSettingsCommand}" Margin="20,0"
+                                    Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"   
+                                    />
+                        <Button Content="Save Settings"  Height="30" Width="120" Command="{Binding Path=SaveUserSettingsCommand}" Margin="20,0"
+                                    Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"   
+                                    />
+                        <Button Content="Paste ID"  Height="30" Width="120" Command="{Binding Path=PasteSARTSettingIDCommand}" Margin="20,0"
+                                    Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"  
+                                    />
+                    </StackPanel>
+
+                </Grid>
+
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="35" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="2*" />
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="1" Text="Set Dealer/Distributor Region" VerticalAlignment="Top" FontSize="20" FontFamily="Tahoma" HorizontalAlignment="Center" />
+                <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <CheckBox Content="USA" FontSize="15" FontFamily="Tahoma" Margin="20,0" IsChecked="{Binding Path=IsUSA, Mode=TwoWay}" Padding="10,0,0,0"
+                              Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:CheckBoxes}, ResourceId=CheckBoxStyleOne}}" />
+                    <CheckBox Content="APAC" FontSize="15" FontFamily="Tahoma" Margin="20,0" IsChecked="{Binding Path=IsAPAC, Mode=TwoWay}" Padding="10,0,0,0"
+                              Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:CheckBoxes}, ResourceId=CheckBoxStyleOne}}"/>
+                    <CheckBox Content="EMEA" FontSize="15" FontFamily="Tahoma" Margin="20,0" IsChecked="{Binding Path=IsEMEA, Mode=TwoWay}" Padding="10,0,0,0"
+                              Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:CheckBoxes}, ResourceId=CheckBoxStyleOne}}"/>
+                    <CheckBox Content="Latin America" FontSize="15" FontFamily="Tahoma" Margin="20,0" IsChecked="{Binding Path=IsLTAM, Mode=TwoWay}" Padding="10,0,0,0"
+                              Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:CheckBoxes}, ResourceId=CheckBoxStyleOne}}"/>
+                    <CheckBox Content="Canada" FontSize="15" FontFamily="Tahoma" Margin="20,0" IsChecked="{Binding Path=IsCanada, Mode=TwoWay}" Padding="10,0,0,0"
+                              Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:CheckBoxes}, ResourceId=CheckBoxStyleOne}}"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Border>
+</UserControl>

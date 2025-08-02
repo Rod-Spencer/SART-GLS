@@ -1,0 +1,131 @@
+﻿<UserControl x:Class="Segway.Modules.WorkOrder.WorkOrderOpenView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:wpfres="clr-namespace:Segway.WPFResources;assembly=WPFResources"
+             xmlns:PresentationOptions="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+             xmlns:shared="http://schemas.actiprosoftware.com/winfx/xaml/shared"
+             xmlns:local="clr-namespace:Segway.Modules.WorkOrder"
+             xmlns:themes="http://schemas.actiprosoftware.com/winfx/xaml/themes"
+             xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:vm="clr-namespace:Segway.Modules.WorkOrder"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             KeyboardNavigation.TabNavigation="Local" 
+             KeyboardNavigation.ControlTabNavigation="Local"
+             DataContext="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type vm:WorkOrderView}}, Path=DataContext}" 
+             VerticalAlignment="Stretch"
+             >
+    <!--xmlns:syteline="clr-namespace:Segway.Syteline.Objects"-->
+
+    <UserControl.Resources>
+
+    </UserControl.Resources>
+
+
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Background="{DynamicResource {ComponentResourceKey ResourceId=ToolbarItemBrush1, TypeInTargetAssembly={x:Type wpfres:Brushes}}}" BorderBrush="DarkGray" BorderThickness="0,0,0,1">
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Rectangle Grid.ColumnSpan="2" Height="16" Fill="Snow" Opacity="0.5" VerticalAlignment="Top"/>
+                <Image Grid.Column="0" Source="../Images/open.png" Height="25" Width="25" Margin="5">
+                    <Image.Effect>
+                        <DropShadowEffect Opacity="0.4" BlurRadius="4"/>
+                    </Image.Effect>
+                </Image>
+                <TextBlock Grid.Column="1" Text="Open Work Order" Foreground="Black" FontSize="16" Opacity="0.65" Margin="0,5,0,5" FontFamily="Tahoma" VerticalAlignment="Center" HorizontalAlignment="Left">
+                <TextBlock.Effect>
+                    <DropShadowEffect BlurRadius="4" Opacity="0.5"/>
+                </TextBlock.Effect>
+                </TextBlock>
+            </Grid>
+        </Border>
+        <DockPanel Grid.Row="1" MinHeight="345" DataContext="{Binding}" VerticalAlignment="Stretch" LastChildFill="True" HorizontalAlignment="Stretch">
+            <shared:AnimatedExpander DockPanel.Dock="Top" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Width="Auto" Height="Auto" 
+                                     VerticalAlignment="Stretch" Margin="5" IsExpanded="{Binding Path=IsExpanded}" Header="Filter Settings"
+                                     IsAutoFocusOnExpandEnabled="True" IsAutoExpandOnFocusEnabled="False" IsAutoCollapseOnBlurEnabled="False" 
+                                     Style="{DynamicResource {ComponentResourceKey ResourceId=ExpanderStyleOne, TypeInTargetAssembly={x:Type wpfres:Expanders}}}"
+                                     >
+                <local:WorkOrderSettingsView x:Name="viewSettings" VerticalAlignment="Top" HorizontalAlignment="Stretch" />
+            </shared:AnimatedExpander>
+            <ListView DockPanel.Dock="Top" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                      ScrollViewer.CanContentScroll="True" Margin="5,0,5,10" BorderThickness="1" FontFamily="Tahoma"
+                      ItemContainerStyle="{DynamicResource {ComponentResourceKey ResourceId=ListViewItemStyleOne, TypeInTargetAssembly={x:Type wpfres:ListViews}}}"
+                      ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                      Style="{DynamicResource {ComponentResourceKey ResourceId=ListViewStyleOne, TypeInTargetAssembly={x:Type wpfres:ListViews}}}"
+                      BorderBrush="{DynamicResource {ComponentResourceKey ResourceId=ControlBorderBrush, TypeInTargetAssembly={x:Type wpfres:Brushes}}}"                      
+                      ItemsSource="{Binding Path=WorkOrderList, Mode=TwoWay}" 
+                      SelectedItem="{Binding Path=Selected_Work_Order, Mode=TwoWay}"
+                      wpfres:GridViewSort.AutoSort="True"   wpfres:GridViewSort.ShowSortGlyph="True"
+                      >
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="MouseDoubleClick">
+                        <i:InvokeCommandAction Command="{Binding OpenWO_Command}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+                <ListView.View>
+                    <GridView AllowsColumnReorder="True" ColumnHeaderContainerStyle="{DynamicResource {ComponentResourceKey ResourceId=GridViewColumnHeaderStyleOne, TypeInTargetAssembly={x:Type wpfres:ListViews}}}">
+                        <GridViewColumn Header="Work Order Number" wpfres:GridViewSort.PropertyName="Work_Order_ID">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock x:Name="txtWO" Text="{Binding Work_Order_ID}" />
+                                    <DataTemplate.Triggers>
+                                        <DataTrigger Binding="{Binding Path=Priority}" Value="Incident">
+                                            <Setter TargetName="txtWO" Property="Foreground" Value="Red"/>
+                                        </DataTrigger>
+                                    </DataTemplate.Triggers>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="PT Serial Number" DisplayMemberBinding="{Binding PT_Serial}" wpfres:GridViewSort.PropertyName="PT_Serial"/>
+                        <GridViewColumn Header="Opened By" DisplayMemberBinding="{Binding Opened_By}" wpfres:GridViewSort.PropertyName="Opened_By"/>
+                        <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Status}" wpfres:GridViewSort.PropertyName="Status" Width="75"/>
+                        <GridViewColumn Header="Entered By" DisplayMemberBinding="{Binding Entered_By}" wpfres:GridViewSort.PropertyName="Entered_By"/>
+                        <GridViewColumn Header="Technician" DisplayMemberBinding="{Binding Technician}" wpfres:GridViewSort.PropertyName="Technician"/>
+                        <GridViewColumn Header="Created" DisplayMemberBinding="{Binding Create_Date}" wpfres:GridViewSort.PropertyName="Create_Date"/>
+                        <GridViewColumn Header="Last Modified" DisplayMemberBinding="{Binding Record_Date}" wpfres:GridViewSort.PropertyName="Record_Date"/>
+                        <GridViewColumn Header="Customer" DisplayMemberBinding="{Binding Customer_Name}" wpfres:GridViewSort.PropertyName="Customer_Name"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </DockPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left" Margin="10,0,0,0">
+            <TextBlock Text="Count: " FontFamily="Tahoma" FontSize="14" Opacity="0.65">
+                <TextBlock.Effect>
+                    <DropShadowEffect BlurRadius="4" Opacity="0.5"/>
+                </TextBlock.Effect>
+            </TextBlock>
+            <TextBlock Text="{Binding Work_Order_Count}" FontFamily="Tahoma" FontSize="14" Opacity="0.65">
+                <TextBlock.Effect>
+                    <DropShadowEffect BlurRadius="4" Opacity="0.5"/>
+                </TextBlock.Effect>
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Right" >
+            <Button Width="120" Height="30" Content="View" Command="{Binding ViewWOCommand}" Margin="0,0,15,10" IsDefault="False"
+                    Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"
+                    >
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="4" Opacity="0.5"/>
+                </Button.Effect>
+            </Button>
+            <Button Width="120" Height="30" Content="Open" Command="{Binding OpenWO_Command}" Margin="10,0,5,10" IsDefault="False"
+                    Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"
+                    >
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="4" Opacity="0.5"/>
+                </Button.Effect>
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

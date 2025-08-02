@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Folder_Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FolderData>
+    <File_Data>
+      <Name>Common.cs</Name>
+      <CRC>0</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>CU.cs</Name>
+      <CRC>-1543597088</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>CUFrame.cs</Name>
+      <CRC>715236238</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>CUTestsData.cs</Name>
+      <CRC>812523988</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\CU.cs</Name>
+      <CRC>189538699</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\CUFrame.cs</Name>
+      <CRC>476354653</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\CUFrameData.cs</Name>
+      <CRC>-1655657475</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\CUFrameMessageStatus.cs</Name>
+      <CRC>581055907</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\CUTestsData.cs</Name>
+      <CRC>846691643</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\DiagnosticSettings.cs</Name>
+      <CRC>13783311</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\EmbeddedFaults.cs</Name>
+      <CRC>72059669</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\Enumerations.cs</Name>
+      <CRC>-1997756868</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\EventManager.cs</Name>
+      <CRC>-1629582004</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\FrameCompletedEventArgs.cs</Name>
+      <CRC>-581978306</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\Key 64.cs</Name>
+      <CRC>-297036976</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\Key64.cs</Name>
+      <CRC>1795492027</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\PTIException.cs</Name>
+      <CRC>-1369721145</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\QueueSyncObj.cs</Name>
+      <CRC>-1169856697</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\StatusUpdatedEventArgs .cs</Name>
+      <CRC>-178552420</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\TestDataManager Interface.cs</Name>
+      <CRC>1312502189</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\Watch Variable.cs</Name>
+      <CRC>1885313682</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Data Models\WatchDataReadyEventArgs.cs</Name>
+      <CRC>1736211168</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Delegates\ConnectionEventHandler.cs</Name>
+      <CRC>2042456045</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Delegates\DataRecievedEventHandler.cs</Name>
+      <CRC>-200428014</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Delegates\FrameCompletedEventHandler.cs</Name>
+      <CRC>1061074210</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Delegates\StatusUpdatedEventHandler.cs</Name>
+      <CRC>169018421</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Delegates\WatchDataReadyEventHandler.cs</Name>
+      <CRC>285916428</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>DiagDataManager.cs</Name>
+      <CRC>29305928</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Diagnostics.cs</Name>
+      <CRC>-923196689</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>DiagnosticSettings.cs</Name>
+      <CRC>1257070528</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>EmbeddedFaults.cs</Name>
+      <CRC>0</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Enumerations\CAN Interface.cs</Name>
+      <CRC>-917393492</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Enumerations\EmbeddedFaultsCategory.cs</Name>
+      <CRC>386076550</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Enumerations\Enter Diagnostic Mode Status.cs</Name>
+      <CRC>-1055805222</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Enumerations\MotorIdentifier.cs</Name>
+      <CRC>1323644130</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Enumerations\PowerOptionsInternal.cs</Name>
+      <CRC>-392704412</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Enumerations\PowerUpModes.cs</Name>
+      <CRC>-1704886255</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Enumerations\PTINetCANInterface.cs</Name>
+      <CRC>-134180108</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Enumerations\PTINetConfiguration.cs</Name>
+      <CRC>1828286131</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Enumerations\PTModel.cs</Name>
+      <CRC>-331797211</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Enumerations\ReturnedStatus.cs</Name>
+      <CRC>1257598691</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Enumerations\TestStatus.cs</Name>
+      <CRC>2010197942</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Enumerations\WakeConfiguration.cs</Name>
+      <CRC>797045365</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Enumerations\WatchListIdentifier.cs</Name>
+      <CRC>-156024273</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Enumerations\WatchSlot.cs</Name>
+      <CRC>-884538315</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>EventManager.cs</Name>
+      <CRC>1544455097</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>FaultsDecoder.cs</Name>
+      <CRC>713065492</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Key64.cs</Name>
+      <CRC>-279311235</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>packages.config</Name>
+      <CRC>177334841</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>PersonalTransporterDiag.cs</Name>
+      <CRC>851018170</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>PT.cs</Name>
+      <CRC>-1532416183</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>PTIException.cs</Name>
+      <CRC>1157656038</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>QueueSyncObj.cs</Name>
+      <CRC>299815487</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>SafeQueue.cs</Name>
+      <CRC>-145670254</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>Services\Diagnostic Services.cs</Name>
+      <CRC>-255987793</CRC>
+    </File_Data>
+    <File_Data>
+      <Name>WatchManager.cs</Name>
+      <CRC>2122177288</CRC>
+    </File_Data>
+  </FolderData>
+  <RefProjData>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Authentication Objects\Authentication Objects.csproj</Name>
+      <Version>1.0.5594.448</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\Authentication Objects\Authentication Objects.csproj</Name>
+      <Version>1.0.5866.528</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\CAN Objects\CAN Objects.csproj</Name>
+      <Version>1.0.5593.320</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\CAN Objects\CAN Objects.csproj</Name>
+      <Version>1.0.5866.364</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\CAN Objects\CAN Objects.csproj</Name>
+      <Version>1.0.2633.3</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\CAN2 Commands\CAN2 Commands.csproj</Name>
+      <Version>1.0.5866.1779</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\CAN2 Commands\CAN2 Commands.csproj</Name>
+      <Version>1.0.5594.1720</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\CAN2 Messages\CAN2 Messages.csproj</Name>
+      <Version>1.0.5593.627</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\CAN2 Messages\CAN2 Messages.csproj</Name>
+      <Version>1.0.2726.366</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\CAN2 Messages\CAN2 Messages.csproj</Name>
+      <Version>1.0.5866.658</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\CAN2 Systec\CAN2 Systec.csproj</Name>
+      <Version>1.0.5866.529</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\CAN2 Systec\CAN2 Systec.csproj</Name>
+      <Version>1.0.5593.502</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\CAN2 Systec\CAN2 Systec.csproj</Name>
+      <Version>1.0.2726.277</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\CAN2\CAN2.csproj</Name>
+      <Version>1.0.2725.576</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\CAN2\CAN2.csproj</Name>
+      <Version>1.0.5866.854</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\CAN2\CAN2.csproj</Name>
+      <Version>1.0.5593.818</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\COFF Objects\COFF Objects.csproj</Name>
+      <Version>1.0.5866.13</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\..\..\Projects\Libraries\Object Libraries\COFF Objects\COFF Objects.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\COFF\COFF.csproj</Name>
+      <Version>1.0.5594.640</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\COFF\COFF.csproj</Name>
+      <Version>1.0.5866.661</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\COFF\COFF.csproj</Name>
+      <Version>1.0.2725.345</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Common\Common.csproj</Name>
+      <Version>1.0.5588.2313</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\Common\Common.csproj</Name>
+      <Version>1.0.2725.2152</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Database Objects\Database Objects.csproj</Name>
+      <Version>1.0.5585.1580</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\Database Objects\Database Objects.csproj</Name>
+      <Version>1.0.5866.1625</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\DatabaseHelper\Database Objects.csproj</Name>
+      <Version>1.0.5580.1579</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\..\..\Projects\Libraries\Object Libraries\Database Objects\Database Objects.csproj</Name>
+      <Version>1.0.5594.1645</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\DatabaseHelper\DatabaseHelper.csproj</Name>
+      <Version>1.0.2717.1476</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\DatabaseHelper\DatabaseHelper.csproj</Name>
+      <Version>1.0.5579.1577</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\Exception Helper\Exception Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Exception Helper\Exception Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Helper Libraries\Logger Helper\Logger Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Logger Helper\Logger Helper.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\NHibernateBase\NHibernateBase.csproj</Name>
+      <Version>1.0.5588.196</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Segway Services\MSSQL\SART 2012 Web Service Client\SART 2012 Web Service Client.csproj</Name>
+      <Version>1.0.5580.748</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\SART Infrastructure\SART Infrastructure.csproj</Name>
+      <Version>1.0.5866.1819</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\SART Objects\SART Objects.csproj</Name>
+      <Version>1.0.2725.1277</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\SART Objects\SART Objects.csproj</Name>
+      <Version>1.0.5594.1773</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\SART Objects\SART Objects.csproj</Name>
+      <Version>1.0.5866.1840</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\REST Services\SART\SART Web Service Client REST\SART Web Service Client REST.csproj</Name>
+      <Version>1.0.0.0</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Object Libraries\Segway Objects\Segway Objects.csproj</Name>
+      <Version>1.0.5866.4284</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\tools\Segway Objects\Segway Objects.csproj</Name>
+      <Version>1.0.2725.3885</Version>
+    </Reference_Project_Data>
+    <Reference_Project_Data>
+      <Name>..\..\..\..\Libraries\Segway Objects\Segway Objects.csproj</Name>
+      <Version>1.0.5593.4236</Version>
+    </Reference_Project_Data>
+  </RefProjData>
+  <Changed>true</Changed>
+</Folder_Data>

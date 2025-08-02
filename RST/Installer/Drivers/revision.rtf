@@ -1,0 +1,263 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1031\deflangfe1031\deftab708{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red255\green0\blue0;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\nowidctlpar\lang2057\ul\b\f0\fs20 Revision history of USB-CANmodul Utility Disk SO-387\par
+\ulnone\b0\fs16\par
+Latest changes:\par
+\b\i\fs18\par
+Version V5.09:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Software changed: PCANView (USBCAN) can write a binary CAN trace file. Using the new .NET tool ConvertUcanTrace.exe these binary CAN trace files can be converted into text format. This tool is provided as source code.\par
+{\pntext\f1\'B7\tab}Bug fixed: The traffic LED of an USB-CANmodul G4 did not blink when the CAN interface was initialized while CAN traffic already was active on CAN bus.\par
+{\pntext\f1\'B7\tab}Bug fixed: USB-CANmodul Control did not show all connected devices after switching more than one device to the USB-CANnetwork driver or back to the standard driver.\par
+{\pntext\f1\'B7\tab}Several bugs fixed according to USB3.0 ports.\par
+\pard\nowidctlpar\b\i\fs18\par
+Version V5.08:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 New feature: A new method EnumerateHardware() was added to the UcanDotNET.dll (class USBcanServer). The demo USBcanDemoVB uses this method to show the usage of the new method.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V5.07:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Bug fixed: USB-CANmoduls of third generation (G3) only received 2 CAN messages if the acceptance filter AMR/ACR was configured to only receive any CAN-IDs. Then the reception stopped for CAN messages which should be passed.\par
+{\pntext\f1\'B7\tab}Bug fixed: A BSOD occurred when using usbcan.sys and the USB-CANmodul was disconnected while actively sending CAN messages.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V5.06:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Software changed: USB-CANmodul Control can start kernel logger sessions to log debug information from USBCAN kernel drivers.\par
+{\pntext\f1\'B7\tab}Bug fixed: USB-CANmoduls of third generation (G3) only received 2 extended CAN messages (CAN2.0B = 29 bit CAN-ID). Then the reception of extended CAN messages stopped.\par
+{\pntext\f1\'B7\tab}Bug fixed: With driver version V5.05 Windows freezed after initializing the CAN interface of an USB-CANmodul. Apparently this occurred on PC with a special type of USB chip sets. \par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V5.05:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Software changed: New methods implemented in UcanDotNET server: USBCAN_CALCULATE_AMR() and USBCAN_CALCULATE_ACR() with the same functionality as the macros defined in USBCAN32.H.\par
+{\pntext\f1\'B7\tab}Software changed: Signals EN and /STB of AU5790 at the single-wire USB-CANmodul2 can be separately switched on/off by using the API function UcanWriteCanPortEx().\line     For the low-speed USB-CANmodul2 the signals EN and /STB are interconnected at TJA1054. Both signals are switched by using the API function UcanWriteCanPortEx() with the bit 6 (UCAN_CANPORT_STB).\par
+{\pntext\f1\'B7\tab}Bug fixed: API Functions UcanInitHardwareEx() and UcanInitHardwareEx2() of version V5.04 returned an error code although the USB-CANmodul was successfully initialized.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V5.04:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Software changed: Driver support for GW-001 and GW-002 removed. For these obsolete devices the version V4.18r2 is recommended. The simultaneous use of these modules with the modules of 3rd and 4th generation is impossible.\par
+{\pntext\f1\'B7\tab}Software changed: API function UcanSetDeviceNr() implemented in USBCAN32.DLL and USBCAN64.DLL for easy way to change the device number from customer applications.\par
+{\pntext\f1\'B7\tab}Software changed: API function UcanEnumerateHardware() implemented in USBCAN32.DLL and USBCAN64.DLL for enumeration of connected USB-CANmoduls on a host.\par
+{\pntext\f1\'B7\tab}Software changed: API function UcanInitHardwareEx2() implemented in USBCAN32.DLL and USBCAN64.DLL for initializing an USB-CANmodul by its serial number.\par
+{\pntext\f1\'B7\tab}Software changed: API function UcanSetDebugMode() has to be called in UNICODE format.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V5.03:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Software changed: Forced firmware update is necessary for the 4th generation of USB-CANmoduls. The update process lasts for longer time. Please do not unplug the module from USB port until the update process has been finished.\par
+{\pntext\f1\'B7\tab}Software changed: The USB-CANmodul Control shows the module type of USB-CANmodul2 of 4th generation in hardware tab-sheet.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V5.02:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Software changed: Standard USB-CANmoduls of 4th generation can enable 100\'b5s timestamp.\par
+{\pntext\f1\'B7\tab}Software changed: The Windows driver of USB-CANmoduls of 4th generation are not installed again when the module is connected on another USB port for the first time.\par
+{\pntext\f1\'B7\tab}Bug fixed: USB-CANmoduls of 4th generation could not set user defined bit rates.\par
+{\pntext\f1\'B7\tab}Bug fixed: The USBCAN-API received all cyclic CAN messages sent by the USB-CANmodul itself although the echo was not enabled.\par
+{\pntext\f1\'B7\tab}Bug fixed: At USB-CANmoduls of 4th generation, TX messages were delayed sent when multiple of 4 CAN messages were sent by one call.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V5.01:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Software changed: Support 4th generation of USB-CANmodul2 (Revision 3).\par
+{\pntext\f1\'B7\tab}Software changed: Window size of the USB-CANmodul Control increased.\par
+{\pntext\f1\'B7\tab}Bug fixed: GW-001 / GW-002 was not usable with driver version V5.00.\par
+{\pntext\f1\'B7\tab}Bug fixed: When an application did not shot down the interface correctly then a restart of the application could crash with an access violation.\par
+{\pntext\f1\'B7\tab}Bug fixed: USB-CANmodul of the 4th generation could lose CAN messages on higher bus load.\par
+{\pntext\f1\'B7\tab}Bug fixed: Using the USB-CANmodul8/16 with the driver version V5.00 results in an endless loop updating the firmware.\par
+{\pntext\f1\'B7\tab}Any minor bugs fixed.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V5.00:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Software changed: Support 4th generation of USB-CANmodul1 (Revision 4).\par
+{\pntext\f1\'B7\tab}Bug fixed: USB-CANmodul Control sometimes did not show all connected USB-CANmoduls. This happened when more than one logical USB-CANmoduls were connected in mixed mode, using the standard kernel driver and network kernel driver.\par
+{\pntext\f1\'B7\tab}Bug fixed: Reading the EEPROM of the USB-CANmodul the content between EEPROM address 0x0000 to 0x00FF was mirrored each at multiple of 256 bytes. Additionally the reading and writing command was optimized for speed.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V4.18 r2:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Software changed: Driver support only for obsolete devices as GW-001 and GW-002.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V4.18:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Bug fixed: When USBCAN32.dll or USBCAN64.dll was used by applications running as no-admin user then an access violation was shown and the application did not start.\par
+{\pntext\f1\'B7\tab}Bug fixed: Bus-off handling changed for derivates USB-CANmodul1/2/8/16.\par
+{\pntext\f1\'B7\tab}Bug fixed: In version V4.17 the automatic firmware update mechanism did not work because of a wrong CRC.\par
+{\pntext\f1\'B7\tab}Software changed: The .NET projects USBcanServer and USBcanDemoVB has been changed. The event handler CanMsgReceivedEvent now overhands the device number to be able to use more than one instance of the USB\_CANmodul.\par
+{\pntext\f1\'B7\tab}Driver tested under Windows 8 (32 bit and 64 bit) and Windows Server 2012 (64 bit).\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V4.17:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Software changed: Starting PCANView the acceptance filter of the USB-CANmodul was closed for all receiving CAN messages. Only after initialisation procedure the filter was opened with the configured CAN-ID range. So any CAN messages could be lost at initialisation time. Now the acceptance filter is completely opened at initialisation time.\par
+{\pntext\f1\'B7\tab}Bug fixed: When an additional monitor was used and PCANView was used within this additional monitor, then the PCANView was not visible when the additional monitor was not connected at the next start of PCANView.\par
+{\pntext\f1\'B7\tab}Bug fixed: The tool PCANView for USB-CANmodul stored the file PEAKUCAN.INI in a wrong folder. Now the file is stored to the folder C:\\Documents and Settings\\username\\Application Data\\SYSTEC-electronic.\par
+{\pntext\f1\'B7\tab}Bug fixed: The command "Change parameters..." of context menu in tab sheet Hardware did not work.\par
+{\pntext\f1\'B7\tab}Bug fixed: When an application crashes in using the USBCAN32.dll or USBCAN64.dll the internal structures of the DLL were not cleared correctly. At the next start of the application the USB-CANmodul could not be found.\par
+{\pntext\f1\'B7\tab}Bug fixed: At the tab sheet "Debug" of USB-CANmodul Control the Browse button could not be used to select another folder on Windows 7.\par
+{\pntext\f1\'B7\tab}Bug fixed: On Windows XP the USB-CANmodul Control could not be correctly started from Control Panel. The dialog box "run as..." did always appear.\par
+{\pntext\f1\'B7\tab}New feature: LabView Demo added for LabView 2011.\par
+{\pntext\f1\'B7\tab}New feature: For all example applications using Microsoft Visual Studio 2008 the plattform x64 is added.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V4.16 (only internal version):\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 New feature: USBCAN64.DLL available for 64 bit processes on Windows 64 Bit OS. USB-CANmodul Control is a 64\~bit process now on Windows 64 Bit OS.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V4.15 r2:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Bug fixed: Firmware download was automatically executed although "Manual firmware update" was selected.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V4.15 r1:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Bug fixed: Setup.exe could not be called with parameter /VERYSILENT.\par
+{\pntext\f1\'B7\tab}Driver test on Windows Server 2008: No differences to other Windows Versions.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V4.15:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Bug fixed: Sending CAN messages was blocked, if API function UcanResetCanEx() was called with parameter USBCAN_RESET_NO_BUFFER_COMM for multi-channel USB-CANmoduls.\par
+{\pntext\f1\'B7\tab}Bug fixed: USB-CANmodul Control did always show a necessary firmware update for USB-CANmodul8 and/or 16 although the correct firmware was programmed.\par
+{\pntext\f1\'B7\tab}Bug fixed: The BUSOFF state could not be deleted on all sysWORXX USB-CANmoduls.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V4.13 and V4.14:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Internal changes for optimizing production process.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V4.12:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Some changes to adapt the software according to the security guidelines of the operating system Windows Vista and Windows 7.\par
+{\pntext\f1\'B7\tab}Bug fixed: Function UcanSetTxTimeout() did not correctly set the timeout value of both CAN channels of an USB-CANmodul2.\par
+{\pntext\f1\'B7\tab}Bug fixed: Function UcanSetDebugMode() caused an exception when the debug feature was already enabled in USB-CANmodul Control.\par
+{\pntext\f1\'B7\tab}Software changed: Default Debug LOG Level set to value 0xF8E03F0F which logs all available information to the log file.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V4.11:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 New feature: New command line parameter added to PCANView to configure Tx-Timeout.\par
+{\pntext\f1\'B7\tab}New feature: Time stamp in structure tCanMsgStruct expanded from 24 bits to 32 bits.\par
+{\pntext\f1\'B7\tab}New feature: Firmware of sysWORXX USB-CANmoduls can be manually updated by using USB-CANmodul Control.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V4.10:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Update for Windows Vista 64 bit. Test under Windows 7 (32 bit and 64 bit) successful.\par
+{\pntext\f1\'B7\tab}New feature: USB-CANmodul Control can control the firmware update feature (forcing or disabling).\par
+{\pntext\f1\'B7\tab}Bug fixed: Under certain circumstances a sysWORXX USB-CANmodul received any CAN messages too late. Only an active CAN transfer could help as workaround.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V4.09:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 New feature: PCANView.exe can be called with command line parameters to select device number, bit rate, channel and window position.\par
+{\pntext\f1\'B7\tab}New feature: PCANView can configure cyclical CAN messages which are sent by the hardware of all sysWORXX modules itself.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V4.08:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Bug fixed: In usage the USB-CANnetwork driver with setting the acceptance filter to receive only one CAN-ID, there were also received other CAN-IDs.\par
+{\pntext\f1\'B7\tab}Bug fixed: USBCANCE.dll for Windows CE was not able to write a debug log file.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V4.07:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Bug fixed: USB-CANmodul2 with order number 3204019 could not read back the correct /ERR pin state of the low speed CAN transceiver TJA1054.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V4.06:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 New feature: Watchdog implemented in firmware of sysWORXX USB-CANmoduls.\par
+{\pntext\f1\'B7\tab}New feature: The new separate Bootloader that is implemented in firmware of sysWORXX USB-CANmoduls enables the downgrade to earlier driver versions. To use this feature the module has to be connected to a Windows 2000/XP/Vista PC with the driver version 4.06 before.\par
+{\pntext\f1\'B7\tab}New feature: Debug Info Dialog of USBCAN32.DLL can be switched off with USB-CANmodul Control's Debug tab sheet using check box "Show Dbg Info".\par
+{\pntext\f1\'B7\tab}Software changed: New constants for CAN bit rate defined in USBCAN32.DLL for sysWORXX USB-CANmoduls. These new constants sets the sample point above 85%. Using BTR0/BTR1 to set the CAN bit rate (dwBaudrate == 0) the new sample points are enabled. PCANView enables the new sample points too.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V4.05r2:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 New feature: Driver support for Windows CE 6.0 on x86 CPU available.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V4.05:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 New feature: Support for new module version.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V4.04:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Bug fixed: CAN Traffic LED did not work on sysWORXX USB-CANmoduls with firmware version V4.03.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V4.03:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Bug fixed: USB-CANmodul Control V4.02 noted an driver update although no newer version was available.\par
+{\pntext\f1\'B7\tab}Software changed: For installing a new driver using update of USB-CANmodul Control the Setup.exe will not be called automatically but the download folder is opened in Windows Explorer. The user has to start Setup. exe manually.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V4.02:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Bug fixed: When UcanResetCanEx() was called with flags USBCAN_RESET_NO_BUFFER_COMM then not all CAN messages were sent from multi-channel USB-CANmodules.\par
+{\pntext\f1\'B7\tab}Bug fixed: When functions UcanWriteCanMsg() and UcanResetCanEx() were called very often then application could hang for ever.\par
+{\pntext\f1\'B7\tab}Software changed: Setup.exe only installs new driver when all modules are disconnected and when older version was uninstalled before.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V4.01:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Bug fixed: USB-CANmodul GW-001 or GW-002 sometimes was shown in USB-CANmodul Control as using Network Driver although only Device Driver can be used.\par
+{\pntext\f1\'B7\tab}Bug fixed: Library function UcanGetStatus() or UcanGetStatusEx() always returned "no error" in driver version V4.00 although an CAN bus error was detected.\par
+{\pntext\f1\'B7\tab}Bug fixed: Guest account was able to start only one application which uses USBCAN32.DLL on Windows XP.\par
+{\pntext\f1\'B7\tab}Bug fixed: Disconnecting the USB-CANmodul while an application is using it sometimes caused a blue screen on Windows XP with driver version V4.00.\par
+{\pntext\f1\'B7\tab}New feature: USB-CANmodul Control checks automatically if there is a new driver version available at SYS TEC homepage. This feature can be activated at installation time or in USB-CANmodul Control in tab sheet "Update".\par
+{\pntext\f1\'B7\tab}New feature: Context menu added in USB-CANmodul Control in tab sheet "Hardware".\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V4.00:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Bug fixed: Function UcanInitCanEx() did only accept baud rate setting from parameter m_bBTR0 and m_bBTR1 but not from parameter m_dwBaudrate of structure tUcanInitCanParam.\par
+{\pntext\f1\'B7\tab}Bug fixed: Calling function UcanResetCanEx() with parameter flags that was equal to zero resulted for USB-CANmodul1 not to be able to receive any CAN messages.\par
+{\pntext\f1\'B7\tab}Bug fixed: Calling function UcanResetCanEx() for cleaning receive buffer resulted not to be able to delete all received CAN messages of USB-CANmodul1 or GW-002.\par
+{\pntext\f1\'B7\tab}Bug fixed: When function UcanWriteCanMsgEx() returned an error code, the variable referenced by parameter pdwCount_p was set to zero.\par
+{\pntext\f1\'B7\tab}New feature: Support of automatically sending of cyclic CAN messages added in wrapper for LabView 8.5 and 8.6.\par
+{\pntext\f1\'B7\tab}New feature: Support of multi-channel USB-CANmoduls added in contribution for LabView 8.5 and 8.6.\par
+{\pntext\f1\'B7\tab}New feature: Support of Windows Vista (32 and 64 bit) added. Note: GW-001 no longer supported!\par
+{\pntext\f1\'B7\tab}New feature: New API function UcanSetDebugMode() enables the creation of a debug log file out of the USBCAN-library.\par
+{\pntext\f1\'B7\tab}Software changed: Predefined baud rate values of 10kBit/sec, 20kBit/sec, 50kBit/sec and 100kBit/sec for sysWORXX modules changed. Sync Jump Width of these baud rate values is set to 1for better synchronization.\par
+{\pntext\f1\'B7\tab}Software changed: Default path for creating LOG files from USBCAN32.DLL was set to "Documents" (respectively "Eigene Dateien").\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V3.11:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 New feature: Support of Windows CE 5.0 at ARM4VI CPU added in SO-1091.\par
+{\pntext\f1\'B7\tab}New feature: Linux driver version 2.02 r3 released, including a shared library. Kernel driver supports firmware update of USB-CANmodul1. The Driver was tested on Linux kernel 2.6.25 (SUSE at 64 bit CPU) and on Linux 2.6.24 (Ubuntu 32 bit CPU).\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V3.10:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Bug fixed: When two CAN channels was initialized on dual channel sysWORXX modules (order nr. 3204002, 3204003, 3404000, 3404001 or 3004006) with 10kBit/sec and another baud rate than 10kBit/sec then one of these two channels did not correctly work with the correct baud rate.\par
+{\pntext\f1\'B7\tab}Bug fixed: When changes in Debug Settings were made in USB-CANmodul Control they was not stored to the Registry when the windows user was not the administrator.\par
+{\pntext\f1\'B7\tab}New feature: Firmware of all sysWORXX modules also filters Data byte 0 and 1 of CAN2.0A messages and RTR of both CAN2.0A and CAN2.0B messages as GW-001 and GW-002 does.\par
+{\pntext\f1\'B7\tab}New feature: USB-CANmodul Control gots a new Button in Tab Sheet "Debug" for selecting folder where Debug LOG files are stored to.\par
+{\pntext\f1\'B7\tab}New feature: DLL API function UcanResetCanEx(..., USBCAN_RESET_ONLY_TXCHANNEL_BUFF) only deletes transmit buffers of one channel in dual channel sysWORXX modules.\par
+{\pntext\f1\'B7\tab}New feature: DLL API function UcanSetTxTimeout() for dual channel sysWORXX modules added. It configures a transmission timeout (default is 0). When one CAN message cannot be sent within this timeout the firmware sets a special internal state. All further CAN messages for this CAN channel will be deleted automatically and the CAN driver state is set: USBCAN_CANERR_TXMSGLOST to inform the application about the deletion. So the transmission of the other CAN channel is not blocked any more. If these CAN message is sent the special CAN driver state will be deleted automatically. If this timeout is configured to zero this feature is switched off. \par
+{\pntext\f1\'B7\tab}Software changed: A new configuration key is integrated in PUcanCfg.ini for PCANView.exe. The value "TxTimeout" specifies the transmission timeout which is described in section before.\par
+{\pntext\f1\'B7\tab}Software changed: In DemoGW006 and DemoCyclicMsg there is a demo how to load the Usbcan32.dll at run time of the application.\par
+\pard\nowidctlpar\b\i\fs18\par
+Version V3.09:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Bug fixed: CAN status LED was not correctly reset on sysWORXX USB-CANmoduls when the error state was reset automatically.\par
+{\pntext\f1\'B7\tab}Bug fixed: When function UcanInitCanEx2() was called for two CAN channels with transmit echo it could happen that the second channel never received the transmit echo.\par
+{\pntext\f1\'B7\tab}Bug fixed: Device driver Usbcan.sys noticed a receive buffer overrun although there was never an overrun.\par
+{\pntext\f1\'B7\tab}New feature: Support of device driver Usbcan.sys for Microsoft Vista. \cf1 Note: USB-CANnetwork Driver is not available under Vista!\cf0\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V3.08:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Bug fixed: If UcanResetCanEx() was called to reset the CAN interface without deleting the message buffers in firmware, then CAN messages were nevertheless deleted.\par
+{\pntext\f1\'B7\tab}New feature: USB-CANnetwork driver available for all sysWORXX series USB-CANmoduls. \cf1 The use of this driver has to be enabled for each device. \cf0 Use the USB-CANmodul Control to switch and/or show the current state of it.\par
+{\pntext\f1\'B7\tab}New feature: Hardware list within the USB-CANmodul Control is now sorted by serial numbers.\par
+{\pntext\f1\'B7\tab}New feature: USB-CANmodul Control was extended to check for new driver versions on the SYS TEC homepage. Therefore a new tab sheet "Update" was added.\par
+{\pntext\f1\'B7\tab}New feature: UcanForceUpdate tool gets two new command line arguments. "-snr:" specifies the serial number of the USB-CANmodul which has to be updated. "-net:" specifies whether the new USB-CANnetwork driver should be used for the specified device.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V3.07:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Bug fixed: Modules of the sysWORXX USB-CANmodul series hangs when transmission of cyclic CAN messages was started.\par
+{\pntext\f1\'B7\tab}Bug fixed: Access violation has occurred when multiple Windows users tried to initialize USB-CANmoduls on Windows XP.\par
+{\pntext\f1\'B7\tab}Bug fixed: Function UcanWriteCanMsgEx() returned warning message USBCAN_WARN_TXLIMIT instead of USBCAN_SUCCESSFUL when only one CAN message should be sent and it was successfully transmitted.\par
+{\pntext\f1\'B7\tab}Bug fixed: Function UcanInitHardware..() returned USBCAN_ERR_ILLHW when more than one applications tried to initialize modules on the same time. A Mutex is added now to fix the problem.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V3.06:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Bug fixed: Time stamp timer was corrected within new hardware derivates. Time stamps of CAN messages were some different to the old hardware derivates (such as GW-001 or GW-002).\par
+{\pntext\f1\'B7\tab}Bug fixed: Function UcanResetCanEx(...,..., USBCAN_RESET_ONLY_STATUS) could not be called in state HW_INIT.\par
+{\pntext\f1\'B7\tab}New feature: Support for automatically transmission of cyclic CAN messages added. A new demo for Microsoft Visual Studio 6.0 or higher (MFC) is available in folder "%INSTALLDIR%\\DemoCyclicMsg".\par
+{\pntext\f1\'B7\tab}New feature: Function UcanGetMsgPending() added for reading the number of pending CAN messages (current buffer contents).\par
+{\pntext\f1\'B7\tab}New feature: Function UcanGetCanErrorCounter() added for reading the current error counters from the CAN controller. This function is only available for the new hardware derivates (not for GW-001 or GW-002).\par
+{\pntext\f1\'B7\tab}New feature: Function UcanWriteCanMsgEx() returns warning USBCAN_WARN_TXLIMIT when it was called to send more than one CAN messages but not all CAN messages could be sent because the transmit buffer is full. The number of accepted CAN messages were indicated to the application by the parameter pdwCount_p.\par
+{\pntext\f1\'B7\tab}New feature: Function UcanGetVersionEx() also supports to read versions of other driver files (such as loader, device driver and control panel application).\par
+{\pntext\f1\'B7\tab}Software changed: Misspelling the define USBCAN_ERR_DISCONECT was corrected to USBCAN_ERR_DISCONNECT within the header file USBCAN32.H.\par
+{\pntext\f1\'B7\tab}Software changed: USB-CANmodul Control revised with better construction of the dialog box elements. Already used USB-CANmoduls are also displayed (but grayed). The debug log file on using USB-CANmodul Control can be switched on/off separately.\par
+{\pntext\f1\'B7\tab}Software changed: All API functions of USBCAN32.DLL which returns an error code got the return code type UCANRET. The type UCANRET is also defined to 'unsigned char' like the previous type BYTE. Therefore applications need not to be recompiled for this change.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V3.05:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Bug fixed: When function UcanResetCan..() was called while CAN messages were  tried to transmit to the USB-CANmodul via USB (but were still not received there) then the content of the next transmitted CAN messages was destroyed.\par
+{\pntext\f1\'B7\tab}New Feature: Support of USB-CANmodul1 3204000/3204001 and USB-CANmodul2 3204002/3204003 added.\par
+{\pntext\f1\'B7\tab}New Feature: New member variable m_dwProductCode in struct tUcanHardwareInfoEx to find out the hardware type. This hardware type is displayed in tool "USB-CANmocul Control".\par
+{\pntext\f1\'B7\tab}New Feature: New member variables m_wNrOfRxBufferEntries and m_wNrOfTxBufferEntries in struct tUcanInitCanParam to change number of buffer entries in USBCAN32.DLL. \cf1 Please consider these new entries at calling function UcanInitCanEx2().\cf0\par
+{\pntext\f1\'B7\tab}New Feature: Window position of the tool "USB-CANmodul Control" is saved after closing and restored after next open. Also window position of settings dialog in tool PCANView USBCAN is saved now.\par
+{\pntext\f1\'B7\tab}New Feature: Command line tool %InstallDir%\\Bin\\UcanForceUpdate.exe added which allows to force an update of the firmware without replugging the device. Call it to see the usage. Note that it need not to be called. If you plug in the device after installing the new driver then the firmware is updated automatically.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V3.04:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Bug fixed: Some CAN messages were sent twice while big transfer rate at Multiport 3004006.\par
+{\pntext\f1\'B7\tab}Bug fixed: CAN messages of a channel were deleted if the other channel was initialized later on Multiport 3004006.\par
+{\pntext\f1\'B7\tab}Bug fixed: UcanInitCanEx2() does not delete firmware buffer if the other CAN channel is already initialized at Multiport 3004006.\par
+{\pntext\f1\'B7\tab}Workaround: Received CAN messages were lost on Multiport 3004006 because of not automatically handling of USB periphery on Multiport hardware.\par
+{\pntext\f1\'B7\tab}Software changed: Next firmware update (V3.05 and higher) will also be downloaded to Multiport 3004006 if USB cable is replugged.\par
+{\pntext\f1\'B7\tab}Software changed: Uninstallation of driver requires a reboot of Windows.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V3.03:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Software change: USBCAN32.DLL gets two individual receive buffers for each CAN channel of the device. So function UcanReadCanMsgEx() can be called for an explicitly CAN channel without blocking CAN messages from the other CAN channel.\par
+{\pntext\f1\'B7\tab}Software changed: Function UcanResetCanEx() can be called with additional parameter, which specifies what should be reseted.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V3.02:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Software change: Function UcanReadCanMsg..() ignores CAN messages with flag USBCAN_MSG_FF_ECHO if mode kUcanModeTxEcho is not set (USBCAN_WARN_NODATA will not be returned in this case).\par
+{\pntext\f1\'B7\tab}Bug fixed: Function UcanReadCanMsgEx() returnes USBCAN_ERR_CANNOTINIT if initialized channel is CH1, if channel CH0 is not initialized and if parameter bChannel_p of function UcanReadCanMsg..() is set to USBCAN_CHANNEL_ANY.\par
+{\pntext\f1\'B7\tab}Bug fixed: Windows 2000 Hardware Assistant does not found driver Version V3.01.\par
+\pard\nowidctlpar\par
+\b\i\fs18 Version V3.01:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 New Feature: Baud rate support for 10kBit/s added for the Multiport CAN-to-USB (3004006).\par
+{\pntext\f1\'B7\tab}New Feature: Functions UcanReadCanMsg..() also receives transmitted CAN messages, if CAN modus is set to kUcanModeTxEcho. These CAN messages are marked with flag USBCAN_MSG_FF_ECHO.\par
+{\pntext\f1\'B7\tab}New Feature: New function UcanGetModuleTime() readout the current time stamp of USB-CANmodul.\par
+{\pntext\f1\'B7\tab}Bug fixed: Function call UcanDeinitHardware() sometimes caused a memory exception.\par
+{\pntext\f1\'B7\tab}Bug fixed: Any functions of USBCAN32.DLL sometimes returned error code 0x06 (illegal handle), although initialisation was successful and USB-CANmodul was still connected.\par
+{\pntext\f1\'B7\tab}Bug fixed: If Multiport CAN-to-USB (3004006) previously received a CAN2.0A message then the next CAN2.0B messages gots a wrong CAN-ID.\par
+\pard\nowidctlpar\'b7\tab\par
+\b\i\fs18 Version V3.00:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Support of new USB-CANmodul GW-006 with two CAN interfaces.\par
+{\pntext\f1\'B7\tab}Support of up to 64 USB-CANmodules at one PC.\par
+{\pntext\f1\'B7\tab}New API functions which permit to work with second CAN interface.\par
+{\pntext\f1\'B7\tab}Bug fixed: Connect Control callback function was called twice although only one device was connected or disconnected.\par
+\pard\nowidctlpar\'b7\tab\par
+\b\i\fs18 Version V2.20:\par
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\tx360\b0\i0\fs16 Bug fixed: Callback handler for device notification was not called if function UcanInitHwConnectControl() was recalled after calling UcanDeinitHwConnectControl().\par
+{\pntext\f1\'B7\tab}Bug fixed: Older CAN messages or previously sent CAN messages was received if function UcanResetCan() was called while unread CAN messages were within the receive buffer.\par
+{\pntext\f1\'B7\tab}Within the Control Panel Application "USB-CANmodul Control" the debug functionality can be enabled. A log file (C:\\USBCAN.LOG) will be generated from release version of USBCAN32.DLL. USBCAN32.DLD is no longer necessary.\par
+\pard\nowidctlpar\'b7\tab\par
+\lang1033\ul\b\fs20\par
+}
+ 

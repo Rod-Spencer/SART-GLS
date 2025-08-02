@@ -1,0 +1,297 @@
+﻿<UserControl x:Class="Segway.Modules.SART.CodeLoad.CU_Code_Control"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:shared="http://schemas.actiprosoftware.com/winfx/xaml/shared"
+             xmlns:wpfres="clr-namespace:Segway.WPFResources;assembly=WPFResources"
+             xmlns:inf="clr-namespace:Segway.Modules.ShellControls;assembly=SegwayShellControls"
+             xmlns:plv="clr-namespace:Segway.Modules.Progression_Log_Viewer;assembly=ProgressionLogViewer"
+             xmlns:header="clr-namespace:Segway.Modules.HeaderBar;assembly=HeaderBar"
+             xmlns:jtag="clr-namespace:Segway.Modules.Controls.JTags;assembly=JTagsModule"
+             xmlns:local="clr-namespace:Segway.Modules.SART.CodeLoad"
+             mc:Ignorable="d" 
+             d:DesignHeight="650" 
+             d:DesignWidth="1400"
+             >
+    <!--x:Name="CUCodeControl"-->
+
+    <UserControl.Resources>
+        <shared:ConditionalConverter x:Key="ConditionalConverter" />
+    </UserControl.Resources>
+
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+
+        <Popup Grid.Row="1" Grid.RowSpan="1" Grid.Column="1" Grid.ColumnSpan="1" Width="Auto" Height="Auto"
+               IsOpen="{Binding Path=CodeLoad_PopupOpen, Mode=TwoWay}" StaysOpen="False" Placement="Center">
+            <Border Width="1000" Height="Auto" Background="{Binding Path=CodeLoad_PopupColor, Mode=TwoWay}" BorderBrush="Black" BorderThickness="2" CornerRadius="10" >
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <TextBlock Text="{Binding Path=CodeLoad_PopupMessage, Mode=TwoWay}" FontSize="16" Margin="40,25" HorizontalAlignment="Center"  />
+                </ScrollViewer>
+            </Border>
+        </Popup>
+
+
+
+        <Popup Grid.Row="1" Grid.Column="0" Width="Auto" Height="Auto" AllowsTransparency="True"
+               IsOpen="{Binding Path=PopupOpen, Mode=TwoWay}" StaysOpen="False" Placement="Center">
+            <Border Width="600" Background="{Binding Path=PopupColor, Mode=TwoWay}" BorderBrush="Black" BorderThickness="1">
+                <Grid VerticalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="10" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="20" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="1" Text="{Binding Path=PopupMessage, Mode=TwoWay}"     FontSize="22" HorizontalAlignment="Center" Foreground="Black" TextWrapping="Wrap" TextAlignment="Center" />
+                    <TextBlock Grid.Row="3" Text="{Binding Path=PopupMessageCUA, Mode=TwoWay}"  FontSize="16" HorizontalAlignment="Center" Foreground="{Binding Path=PopupMessageCUA_Color, Mode=TwoWay}" Visibility="{Binding Path=PopupMessageCUA_Visibilty}" />
+                    <TextBlock Grid.Row="4" Text="{Binding Path=PopupMessageCUB, Mode=TwoWay}"  FontSize="16" HorizontalAlignment="Center" Foreground="{Binding Path=PopupMessageCUB_Color, Mode=TwoWay}" Visibility="{Binding Path=PopupMessageCUB_Visibilty}" />
+                    <TextBlock Grid.Row="5" Text="{Binding Path=PopupMessageBSAA, Mode=TwoWay}" FontSize="16" HorizontalAlignment="Center" Foreground="{Binding Path=PopupMessageBSAA_Color, Mode=TwoWay}" Visibility="{Binding Path=PopupMessageBSAA_Visibilty}" />
+                    <TextBlock Grid.Row="6" Text="{Binding Path=PopupMessageBSAB, Mode=TwoWay}" FontSize="16" HorizontalAlignment="Center" Foreground="{Binding Path=PopupMessageBSAB_Color, Mode=TwoWay}" Visibility="{Binding Path=PopupMessageBSAB_Visibilty}" />
+                </Grid>
+            </Border>
+        </Popup>
+
+        <!--
+        <Border Grid.Row="0" Background="{DynamicResource {ComponentResourceKey ResourceId=ToolBar_ItemBrush1, TypeInTargetAssembly={x:Type wpfres:Brushes}}}" BorderBrush="DarkGray" BorderThickness="0,1,0,1">
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Rectangle Grid.ColumnSpan="2" Height="16" Fill="Snow" Opacity="0.5" VerticalAlignment="Top"/>
+                <Image Grid.Column="0" Source="../Images/loadcode.png" Height="25" Width="25" Margin="5">
+                    <Image.Effect>
+                        <DropShadowEffect Opacity="0.4" BlurRadius="4"/>
+                    </Image.Effect>
+                </Image>
+                <TextBlock Grid.Column="1" Text="Load Code" Foreground="Black" FontSize="16" Opacity="0.65" Margin="0,5,0,5" FontFamily="Tahoma" VerticalAlignment="Center" HorizontalAlignment="Left">
+                <TextBlock.Effect>
+                    <DropShadowEffect BlurRadius="4" Opacity="0.5"/>
+                </TextBlock.Effect>
+                </TextBlock>
+            </Grid>
+        </Border>
+        -->
+
+        <header:Header_Bar_Control Header_ImageSource="{Binding Header_Image}" HeaderText="Load Code" Header_FontSize="16" />
+        <DockPanel Grid.Row="1" MinHeight="345" DataContext="{Binding}" VerticalAlignment="Stretch" LastChildFill="True" HorizontalAlignment="Stretch">
+            <header:Work_Order_Info DockPanel.Dock="Top" Work_Order_Number="{Binding Path=Work_Order_Num, Mode=TwoWay}" 
+                                    PT_Serial_Number="{Binding Path=PTSerial,Mode=TwoWay}" 
+                                    Work_Order_Color="{Binding Path=WorkOrderColor, Mode=TwoWay}"
+                                    />
+
+
+            <shared:AnimatedExpander DockPanel.Dock="Top" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" 
+                                     Width="Auto" Height="Auto"
+                                     VerticalAlignment="Stretch" Margin="5" IsExpanded="True"
+                                     IsAutoFocusOnExpandEnabled="True" Header="Settings"
+                                     IsAutoExpandOnFocusEnabled="False"
+                                     IsAutoCollapseOnBlurEnabled="False" Style="{DynamicResource {ComponentResourceKey ResourceId=ExpanderStyleOne, TypeInTargetAssembly={x:Type wpfres:Expanders}}}"
+                                     >
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+
+
+                    <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
+                        <!--<Border CornerRadius="3" BorderBrush="#FFA9A9A9" BorderThickness="0.7" Margin="0,5" Grid.Column="0" Grid.ColumnSpan="{Binding Path=BorderColumns, Mode=TwoWay}"/>-->
+                        <RadioButton Grid.Column="0"  HorizontalAlignment="Left" TabIndex="1" GroupName="Action"
+                                     BorderBrush="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:Brushes}, ResourceId=ControlBorderBrush}}"
+                                     BorderThickness="4" Margin="5,5,0,5" VerticalAlignment="Center" Padding="5,0,0,0" 
+                                     Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:RadioButtons}, ResourceId=RadioButtonStyleOne}}"
+                                     IsChecked="{Binding Path=IsLoadChecked, Mode=TwoWay}"
+                                     >
+                            <RadioButton.Content>
+                                <TextBlock Text="Load Code" HorizontalAlignment="Left" Margin="0,5,0,5" FontSize="14.667" FontFamily="Tahoma" Opacity="0.65" VerticalAlignment="Center">
+                                    <TextBlock.Effect>
+                                        <DropShadowEffect BlurRadius="4" Opacity="0.2"/>
+                                    </TextBlock.Effect>
+                                </TextBlock>
+                            </RadioButton.Content>
+                            <RadioButton.Effect>
+                                <DropShadowEffect BlurRadius="4" Opacity="0.35"/>
+                            </RadioButton.Effect>
+                        </RadioButton>
+                        <RadioButton Grid.Column="1" HorizontalAlignment="Left" TabIndex="1" GroupName="Action"
+                                     BorderBrush="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:Brushes}, ResourceId=ControlBorderBrush}}"
+                                     BorderThickness="4" Margin="0,5,0,5" VerticalAlignment="Center" Padding="5,0,0,0" 
+                                     Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:RadioButtons}, ResourceId=RadioButtonStyleOne}}"
+                                     IsChecked="{Binding Path=IsResetChecked, Mode=TwoWay}"
+                                     >
+                            <RadioButton.Content>
+                                <TextBlock Text="Reset Code" HorizontalAlignment="Left" Margin="0,5,0,5" FontSize="14.667" FontFamily="Tahoma" Opacity="0.65" VerticalAlignment="Center">
+                                    <TextBlock.Effect>
+                                        <DropShadowEffect BlurRadius="4" Opacity="0.2"/>
+                                    </TextBlock.Effect>
+                                </TextBlock>
+                            </RadioButton.Content>
+                            <RadioButton.Effect>
+                                <DropShadowEffect BlurRadius="4" Opacity="0.35"/>
+                            </RadioButton.Effect>
+                        </RadioButton>
+                    </Grid>
+                    <Separator Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Height="1" Margin="5,0" VerticalAlignment="Top" />
+                    <TextBlock Grid.Row="2" Grid.Column="0" Text="Component:" HorizontalAlignment="Left" Margin="5,5,0,0" FontSize="14.667" FontFamily="Tahoma" Opacity="0.65" VerticalAlignment="Center">
+                        <TextBlock.Effect>
+                            <DropShadowEffect BlurRadius="4" Opacity="0.5"/>
+                        </TextBlock.Effect>
+                    </TextBlock>
+                    <CheckBox Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left" IsChecked="{Binding Path=Load_CU, Mode=TwoWay}"
+                          Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:CheckBoxes}, ResourceId=CheckBoxStyleOne}}"
+                          BorderBrush="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:Brushes}, ResourceId=ControlBorderBrush}}" 
+                          VerticalAlignment="Center" Margin="5,0,5,0" Padding="0,0,10,0" 
+                          TabIndex="2">
+                        <CheckBox.Effect>
+                            <DropShadowEffect BlurRadius="4" Opacity="0.35"/>
+                        </CheckBox.Effect>
+                        <CheckBox.Content>
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="CU" HorizontalAlignment="Left" 
+                                   Margin="5,10,0,5" FontSize="14.667" FontFamily="Tahoma" Opacity="0.65" 
+                                   VerticalAlignment="Center"
+                                   >
+                            </TextBlock>
+                        </CheckBox.Content>
+                    </CheckBox>
+                    <CheckBox Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" IsChecked="{Binding Path=Load_BSA, Mode=TwoWay}" IsEnabled="True"
+                          Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:CheckBoxes}, ResourceId=CheckBoxStyleOne}}"
+                          BorderBrush="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:Brushes}, ResourceId=ControlBorderBrush}}" 
+                          VerticalAlignment="Center" Margin="0" Padding="0,0,10,0"
+                          TabIndex="2">
+                        <CheckBox.Effect>
+                            <DropShadowEffect BlurRadius="4" Opacity="0.35"/>
+                        </CheckBox.Effect>
+                        <CheckBox.Content>
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="BSA" HorizontalAlignment="Left" 
+                                   Margin="5,10,0,5" FontSize="14.667" FontFamily="Tahoma" Opacity="0.65" 
+                                   VerticalAlignment="Center"
+                                   >
+                            </TextBlock>
+                        </CheckBox.Content>
+                    </CheckBox>
+                    <CheckBox Grid.Row="3" Grid.Column="2" HorizontalAlignment="Left" IsChecked="{Binding Path=Load_A, Mode=TwoWay}"
+                          Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:CheckBoxes}, ResourceId=CheckBoxStyleOne}}"
+                          BorderBrush="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:Brushes}, ResourceId=ControlBorderBrush}}" 
+                          VerticalAlignment="Center" Margin="0" Padding="0,0,10,0" IsEnabled="{Binding Path=Is_BEnabled, Mode=OneWay}"
+                          TabIndex="2">
+                        <CheckBox.Effect>
+                            <DropShadowEffect BlurRadius="4" Opacity="0.35"/>
+                        </CheckBox.Effect>
+                        <CheckBox.Content>
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="Rear (A)" HorizontalAlignment="Left" 
+                                   Margin="5,10,0,5" FontSize="14.667" FontFamily="Tahoma" Opacity="0.65" 
+                                   VerticalAlignment="Center"
+                                   >
+                            </TextBlock>
+                        </CheckBox.Content>
+                    </CheckBox>
+                    <CheckBox Grid.Row="3" Grid.Column="3" HorizontalAlignment="Left" IsChecked="{Binding Path=Load_B, Mode=TwoWay}"
+                              Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:CheckBoxes}, ResourceId=CheckBoxStyleOne}}"
+                              BorderBrush="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type wpfres:Brushes}, ResourceId=ControlBorderBrush}}" 
+                              VerticalAlignment="Center" Margin="20,0,0,0" Padding="0,0,10,0" IsEnabled="{Binding Path=Is_AEnabled, Mode=OneWay}"
+                              TabIndex="2">
+                        <CheckBox.Effect>
+                            <DropShadowEffect BlurRadius="4" Opacity="0.35"/>
+                        </CheckBox.Effect>
+                        <CheckBox.Content>
+                            <TextBlock Grid.Row="0" Grid.Column="0" Text="Front (B)" HorizontalAlignment="Left" 
+                                       Margin="5,10,0,5" FontSize="14.667" FontFamily="Tahoma" Opacity="0.65" 
+                                       VerticalAlignment="Center"
+                                       />
+                        </CheckBox.Content>
+                    </CheckBox>
+                    <TextBlock Grid.Row="2" Grid.Column="2" Text="Target:" HorizontalAlignment="Left" Margin="0,5,0,0" FontSize="14.667" FontFamily="Tahoma" Opacity="0.65" VerticalAlignment="Center">
+                        <TextBlock.Effect>
+                            <DropShadowEffect BlurRadius="4" Opacity="0.5"/>
+                        </TextBlock.Effect>
+                    </TextBlock>
+                </Grid>
+            </shared:AnimatedExpander>
+            <jtag:JTags_Control Name="jtagCtrl" DockPanel.Dock="Top" Grid.ColumnSpan="2" 
+                                dp_JTags="{Binding Path=DataContext.JTagsData, Mode=TwoWay, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:CU_Code_Control}}}" 
+                                dp_Load_Mode="{Binding Path=DataContext.LoadMode, Mode=TwoWay, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:CU_Code_Control}}}"
+                                Visibility="{Binding Path=DataContext.JTag_Visibility, Mode=TwoWay, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:CU_Code_Control}}}"
+                                />
+
+
+            <plv:ProgressionLogViewer Margin="5,0" />
+
+        </DockPanel>
+        <StackPanel Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Orientation="Horizontal" Visibility="{Binding Path=NoteVisibility}">
+            <TextBlock Text="NOTICE" Foreground="Red" FontSize="20" FontWeight="Bold" Margin="10,5,5,10" 
+                                       FontFamily="Tahoma" VerticalAlignment="Center" />
+            <TextBlock Text="{Binding Path=CodeLoad_Note}" Foreground="Red" FontSize="16" Margin="10,5,5,10"
+                               FontFamily="Tahoma" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        </StackPanel>
+        <Button Grid.Row="2" HorizontalAlignment="Right" Width="120" Height="30" Content="{Binding Path=ButtonText}" 
+                Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"
+                Margin="0,5,5,10" Command="{Binding LoadCodeNoticeCommand}" IsEnabled="{Binding Path=IsButtonEnabled}"
+                >
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="4" Opacity="0.5"/>
+            </Button.Effect>
+        </Button>
+
+        <Popup Grid.Row="1" PopupAnimation="Scroll" MinWidth="400" MinHeight="200" Height="Auto" Width="Auto" AllowsTransparency="False"  
+               Placement="Center" IsOpen="{Binding Path=CodeLoad_Notice_Popup_Open}" StaysOpen="True">
+            <!--Placement="Center" PlacementTarget="{Binding ElementName=CUCodeControl}" IsOpen="{Binding Path=CodeLoad_Notice_Popup_Open}" StaysOpen="True">-->
+            <Border BorderThickness="1"
+                    BorderBrush="{DynamicResource {ComponentResourceKey ResourceId=ControlBorderBrush, TypeInTargetAssembly={x:Type wpfres:Brushes}}}">
+                <Grid Background="{DynamicResource {ComponentResourceKey ResourceId=LightBackgroundBrush, TypeInTargetAssembly={x:Type wpfres:Brushes}}}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0" Orientation="Horizontal">
+                        <Image Source="../Images/NoticeIcon.png" Height="45" Width="45" Margin="20,20,0,20"
+                                   HorizontalAlignment="Center" VerticalAlignment="Center" >
+                            <Image.Effect>
+                                <DropShadowEffect BlurRadius="4" Opacity="0.4"/>
+                            </Image.Effect>
+                        </Image>
+                        <TextBlock Text="NOTICE" Foreground="Black" FontSize="24" FontWeight="Bold" Margin="10,5,5,5"
+                                       FontFamily="Tahoma" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                    </StackPanel>
+                    <TextBlock Grid.Row="1"
+                               Text="{Binding Path=CodeLoad_Note}" Foreground="Black" FontSize="16" Margin="20,20,5,20"
+                               FontFamily="Tahoma" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                    <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,20,0">
+                        <Button Content="Cancel" HorizontalAlignment="Right" Width="120" Height="30" Command="{Binding CancelNoticeCommand}"
+                                    Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"
+                                    Margin="0,5,5,20" Visibility="Visible" />
+                        <Button Content="Continue" HorizontalAlignment="Right" Width="120" Height="30" Command="{Binding LoadCodeCommand}"
+                                    Style="{DynamicResource {ComponentResourceKey ResourceId=ButtonStyleOne, TypeInTargetAssembly={x:Type wpfres:Buttons}}}"
+                                    Margin="0,5,5,20" Visibility="Visible"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Popup>
+    </Grid>
+</UserControl>

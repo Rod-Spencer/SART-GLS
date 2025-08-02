@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Groups>
+  <Group>
+    <Name>Expert|True|True</Name>
+    <ToolBarItem>
+      <Name>Event Logs</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Load Code</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>BlackBox</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Administration</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Work Order</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Diagnostics</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Repairs</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Log Out</Name>
+    </ToolBarItem>
+  </Group>
+  <Group>
+    <Name>Advanced|True|True</Name>
+    <ToolBarItem>
+      <Name>Event Logs</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Load Code</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Work Order</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Diagnostics</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Repairs</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Log Out</Name>
+    </ToolBarItem>
+  </Group>
+  <Group>
+    <Name>Intermediate|True|True</Name>
+    <ToolBarItem>
+      <Name>Event Logs</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Load Code</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Work Order</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Diagnostics</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Repairs</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Log Out</Name>
+    </ToolBarItem>
+  </Group>
+  <Group>
+    <Name>Basic|True|True</Name>
+    <ToolBarItem>
+      <Name>Event Logs</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Work Order</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Log Out</Name>
+    </ToolBarItem>
+  </Group>
+  <Group>
+    <Name>Expert|False|True</Name>
+    <ToolBarItem>
+      <Name>Event Logs</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Administration</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Work Order</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Log Out</Name>
+    </ToolBarItem>
+  </Group>
+  <Group>
+    <Name>Advanced|False|True</Name>
+    <ToolBarItem>
+      <Name>Event Logs</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Work Order</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Log Out</Name>
+    </ToolBarItem>
+  </Group>
+  <Group>
+    <Name>Intermediate|False|True</Name>
+    <ToolBarItem>
+      <Name>Event Logs</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Work Order</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Log Out</Name>
+    </ToolBarItem>
+  </Group>
+  <Group>
+    <Name>Basic|False|True</Name>
+    <ToolBarItem>
+      <Name>Event Logs</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Work Order</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Log Out</Name>
+    </ToolBarItem>
+  </Group>
+  <Group>
+    <Name>Expert|True|False</Name>
+    <ToolBarItem>
+      <Name>Event Logs</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Administration</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Work Order</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Log Out</Name>
+    </ToolBarItem>
+  </Group>
+  <Group>
+    <Name>Advanced|True|False</Name>
+    <ToolBarItem>
+      <Name>Event Logs</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Load Code</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Work Order</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Diagnostics</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Repairs</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Log Out</Name>
+    </ToolBarItem>
+  </Group>
+  <Group>
+    <Name>Intermediate|True|False</Name>
+    <ToolBarItem>
+      <Name>Event Logs</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Load Code</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Work Order</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Diagnostics</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Repairs</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Log Out</Name>
+    </ToolBarItem>
+  </Group>
+  <Group>
+    <Name>Basic|True|False</Name>
+    <ToolBarItem>
+      <Name>Event Logs</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Work Order</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Log Out</Name>
+    </ToolBarItem>
+  </Group>
+  <Group>
+    <Name>Expert|False|False</Name>
+    <ToolBarItem>
+      <Name>Event Logs</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Administration</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Work Order</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Log Out</Name>
+    </ToolBarItem>
+  </Group>
+  <Group>
+    <Name>Advanced|False|False</Name>
+    <ToolBarItem>
+      <Name>Event Logs</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Work Order</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Log Out</Name>
+    </ToolBarItem>
+  </Group>
+  <Group>
+    <Name>Intermediate|False|False</Name>
+    <ToolBarItem>
+      <Name>Event Logs</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Work Order</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Log Out</Name>
+    </ToolBarItem>
+  </Group>
+  <Group>
+    <Name>Basic|False|False</Name>
+    <ToolBarItem>
+      <Name>Event Logs</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Work Order</Name>
+    </ToolBarItem>
+    <ToolBarItem>
+      <Name>Log Out</Name>
+    </ToolBarItem>
+  </Group>
+</Groups>
